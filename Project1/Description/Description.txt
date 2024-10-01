@@ -1,0 +1,7 @@
+ Developed a machine learning algorithm to analyze the transition of
+MnS2 from insulating to conductive states, improving prediction
+accuracy by 30%.
+• Implemented a data analysis framework with Python, Django, and
+Pandas, increasing data processing efficiency by 40%.
+• Acquired foundational skills in machine learning and data analysis,
+enhancing problem-solving abilities.
