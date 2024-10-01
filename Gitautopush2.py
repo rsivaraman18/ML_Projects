@@ -34,9 +34,10 @@ def main():
         if status_output:
             # Parse the status output to get the list of files or folders
             items = parse_git_status(status_output)
+            tot_items = len(items)
             if items:
                 # Show all untracked or modified files
-                print(f'[{current_time}] Detected the following untracked/modified files:')
+                print(f'[{current_time}] Detected {tot_items} untracked/modified files:')
                 for item in items:
                     print(f'- {item}')
                 
@@ -67,7 +68,7 @@ def main():
                         print(push_result.stderr)
                     
                     # Set the waiting time before processing the next file (e.g., 15 minutes)
-                    waiting_time = 1800  # 30 minutes in seconds
+                    waiting_time = 2400  # 30 minutes in seconds
                     next_check_time = (datetime.now() + timedelta(seconds=waiting_time)).strftime("%Y-%m-%d %H:%M:%S")
                     print(f'Next Git status will be checked after {int(waiting_time / 60)} minutes at {next_check_time}')
                     
