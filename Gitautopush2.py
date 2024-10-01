@@ -68,7 +68,7 @@ def main():
                         print(push_result.stderr)
                     
                     # Set the waiting time before processing the next file (e.g., 15 minutes)
-                    waiting_time = 10  # 30 minutes in seconds
+                    waiting_time = 2400  # 30 minutes in seconds
                     next_check_time = (datetime.now() + timedelta(seconds=waiting_time)).strftime("%Y-%m-%d %H:%M:%S")
                     print(f'Next Git status will be checked after {int(waiting_time / 60)} minutes at {next_check_time}')
                     
@@ -76,7 +76,7 @@ def main():
                     time.sleep(waiting_time)
         else:
             # If no files are untracked or modified, rest for a set amount of time
-            rest_time = 15  # 15 minutes in seconds
+            rest_time = 900  # 15 minutes in seconds
             print(f'[{current_time}] No Untracked or Modified Files Found. Resting for {int(rest_time / 60)} minutes.')
             
             next_check_time = (datetime.now() + timedelta(seconds=rest_time)).strftime("%Y-%m-%d %H:%M:%S")
