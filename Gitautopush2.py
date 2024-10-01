@@ -71,7 +71,7 @@ def main():
                     waiting_time = 60  # 30 minutes in seconds
                     next_check_time = (datetime.now() + timedelta(seconds=waiting_time)).strftime("%Y-%m-%d %H:%M:%S")
                     print(f'Next Git status will be checked after {int(waiting_time / 60)} minutes at {next_check_time}')
-                    
+                    print('*************')          
                     # Sleep for the specified time
                     time.sleep(waiting_time)
         else:
@@ -84,6 +84,9 @@ def main():
             
             # Sleep for the rest time
             time.sleep(rest_time)
+        
+        print('*************') 
+        print() 
 
 if __name__ == "__main__":
     main()
