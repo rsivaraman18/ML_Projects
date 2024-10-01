@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 commands = {
     'status': 'git status --porcelain',
     'add': 'git add "{filename}"',  # Adding quotes to handle spaces
-    'commit': 'git commit -m "Auto commit for {filename}"',
+    'commit': 'git commit -m "Created for {filename}"',
     'push': 'git push origin main'
 }
 
