@@ -1,0 +1,203 @@
+﻿*{
+  margin: 0px;
+  padding: 0px;;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+.container
+{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: red;
+  background: linear-gradient(to bottom, rgb(6, 108, 100),  rgb(14, 48, 122));
+  width: 800px;
+  height: 400px;
+  margin: 10% auto;;
+  border-radius: 5px;
+}
+
+.content-holder
+{
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-top: 15%;
+  padding: 50px;
+}
+
+.content-holder h2
+{
+  font-size: 34px;
+  margin: 20px auto;
+}
+
+.content-holder p
+{
+  margin: 30px auto;
+}
+
+.content-holder button
+{
+  border:none;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #E493B3;
+  width: 150px;
+  margin: 20px auto;
+  font-weight:600;
+  font-style:italic;
+}
+
+
+.box-2{
+  background-color: white;
+
+  margin: 5px;
+}
+
+.login-form-container
+{
+  text-align: center;
+  margin-top: 10%;
+
+}
+
+.login-form-container h1
+{
+  color: black;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.input-field
+{
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid rgb(168, 168, 168);
+  width: 250px;
+  outline: none;
+}
+
+.login-button{
+  box-sizing: border-box;
+  color: white;
+  font-size: 14px;
+  padding: 13px;
+  border-radius: 7px;
+  border: none;
+  width: 250px;
+  outline: none;
+  background-color: rgb(56, 102, 189);
+  font-weight:900;
+}
+
+
+
+.button-2
+{
+  display: none;
+}
+
+
+
+
+
+.signup-form-container
+{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+  text-align: center;
+  display: none;
+}
+
+
+.signup-form-container h1
+{
+  color: black;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.signup-button{
+  box-sizing: border-box;
+  color: white;
+  font-size: 14px;
+  padding: 13px;
+  border-radius: 7px;
+  border: none;
+  width: 250px;
+  outline: none;
+  background-color: rgb(56, 189, 149);
+}
+
+
+
+/*  BACK BUTTON CSS EFFECT */
+
+#backButton {
+  background: linear-gradient(to right, #3498db, #5dade2, #85c1e9, #a9cce3);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+#backButton:hover {
+  background: linear-gradient(to right, #a9cce3, #85c1e9, #5dade2, #3498db);
+}
+
+#backButton span {
+  pointer-events: none;
+}
+
+/*  BACK BUTTON CSS EFFECT ENDS HERE */
+
+
+.gradient-button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: bold;
+}
+
+.button-1 {
+  background: linear-gradient(to right, #3498db, #6ab0de, #a9cce3);
+  color: black;
+}
+
+.button-2 {
+  background: linear-gradient(to right, #8cc152, #5cb85c, #2ecc71, #27ae60);
+  color: black;
+}
+
+.gradient-button:hover {
+  transform: translateY(-2px);
+}
+
+.gradient-button:active {
+  transform: translateY(1px);
+}
