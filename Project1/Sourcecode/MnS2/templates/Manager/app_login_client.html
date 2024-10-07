@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+{% extends 'Manager/manager_home.html' %}
+{% block login_approval %} active{% endblock %}
+{% block title %}Client Login Approval{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Approve</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'Manager/approval/approval.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Main/bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'Main/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <style>
+        body {
+            background-image: url("{% static 'Clients/images/img5.jpg' %}");
+            background-image: url("{% static 'Images/3.jpg' %}");
+            background-size: cover;
+        }
+
+        .panel-heading {
+            background: #5B6D83;
+        }
+
+        .title {
+            text-align: center;
+            font-style: italic;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .btn-reject {
+            background-color: #FF6347;
+            border-radius: 20px;
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-reject:hover {
+            background-color: #D32F2F;
+
+        }
+
+        .btn-approve {
+            background-color: green;
+            border-radius: 20px;
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-approve:hover {
+            background-color: #2E8B57;
+        }
+
+        .btn-curved {
+            border-radius: 20px;
+        }
+
+        .btn-curved:hover {
+            animation: buttonHoverEffect 0.5s ease;
+        }
+
+        @keyframes buttonHoverEffect {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+
+        .scrollable-table {
+            overflow-x: auto;
+            overflow-y: auto;
+            max-height: 400px;
+        }
+
+
+        .table {
+            width: 100%;
+            background:white;
+            font-weight:bolder;
+            text-align:center;
+        }
+        .container{
+            margin-top:150px;
+        }
+
+
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+            font-weight:bolder;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-item {
+            color: #333;
+            padding: 8px 12px;
+            text-decoration: none;
+            display: block;
+            font-weight:bold;
+        }
+
+        .dropdown-item:hover {
+            background-color: #427D9D;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-11">
+            <div class="panel" >
+                <div class="panel-heading" style="background:#5D6D82;">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="title"><span>CLIENT LOGIN APPROVAL</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body table-responsive">
+                    <div class="scrollable-table">
+                        {% if datas %}
+                            <table class="table table-hover" id="table11">
+                                <thead style="background:#A8B7CA;">
+                                    <tr>
+                                        <th>S.NO</th>
+                                        <th>NAME</th>
+                                        <th>LOCATION</th>
+                                        <th>EMAIL</th>
+                                        <th>PHONE</th>
+                                        <th>CLIENT ID</th>
+                                        <th>APPROVE</th>
+                                        <th>REJECT</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for data in datas %}
+                                        <tr>
+                                            <td>{{ forloop.counter }}</td>
+                                            <td>{{ data.username|title }}</td>
+                                            <td>{{ data.location|title }}</td>
+                                            <td>{{ data.email }}</td>
+                                            <td>{{ data.phone }}</td>
+                                            {% if not data.consumer_id %}
+                                                <td><span class="badge badge-danger badge-lg">Inactive</span></td>
+                                            {% else %}
+                                                <td>{{ data.consumer_id }}</td>
+                                            {% endif %}
+
+                                            {% if data.cl_admin_lg is True %}
+                                                <td><a class="btn btn-success btn-curved">Client Approved</a></td>
+                                                <td><a class="btn btn-danger btn-curved">------</a></td>
+                                            {% else %}
+                                                <td><a href="/manager/app_client_lg/{{data.id}}/" class="btn btn-success btn-curved" style="font-weight: bolder;">Approve</a></td>
+                                                <td><a href="/manager/app_client_lg_reject/{{data.id}}/" class="btn btn-danger btn-curved" style="font-weight: bolder;">Reject</a></td>
+                                            {% endif %}
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        {% else %}
+                             <div>
+                                <p style="font-weight: bold;text-transform:uppercase;color:red; font-size: 24px; animation: blink-animation 1s infinite;">No registered Team</p>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}
+</html>
