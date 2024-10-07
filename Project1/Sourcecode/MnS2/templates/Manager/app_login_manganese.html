@@ -1,0 +1,209 @@
+{% extends 'Manager/manager_home.html' %}
+{% block login_approval %} active{% endblock %}
+{% block title %}Manganese Team Login Approval{% endblock %}
+{% block content %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manganese Approve</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'Manager/approval/approval.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Main/bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'Main/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'Manager/approval/table_styles.css' %}">
+    <style>
+        body {
+            background-image: url("{% static 'Clients/images/img3.jpg' %}");
+
+            background-size: cover;
+
+            }
+
+        .table-scroll {
+            overflow-x: auto;
+            overflow-y: auto;
+            max-height: 400px;
+        }
+
+        .title {
+            text-align: center;
+            font-style: italic;
+        }
+
+        #tdata1 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #tdata2 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #btn1 {
+            color: #0766AD;
+            background-color: #65B741;
+            font-weight: bolder;
+            border-radius: 7px;
+            padding: 9px;
+            margin: 5px;
+        }
+
+        #btn2 {
+            color: white;
+            background-color: #24B35C;
+            font-weight: bolder;
+            border-radius: 7px;
+            padding: 9px;
+            margin: 5px;
+        }
+
+        #btn3 {
+            color: white;
+            background-color: #C3160A;
+            font-weight: bolder;
+            border-radius: 7px;
+            padding: 9px;
+            margin: 6px;
+        }
+
+        .no-teams {
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @keyframes blink-animation {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .no-teams p {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: red;
+            font-size: 24px;
+            animation: blink-animation 1s infinite;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .title {
+            text-align: center;
+            font-style: italic;
+            animation: slideIn 2s forwards;
+        }
+
+          .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+            font-weight:bolder;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-item {
+            color: #333;
+            padding: 8px 12px;
+            text-decoration: none;
+            display: block;
+            font-weight:bold;
+        }
+
+        .dropdown-item:hover {
+            background-color: #427D9D;
+        }
+
+        #table11{
+            background:white;
+            font-weight:bolder;
+        }
+        #tdata1{
+            background:#5F6164;
+            font-weight:bolder;
+            color:white;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+
+<div class="container" style="margin-top:130px;">
+    <div class="row">
+        <div class="col-md-11">
+            <div class="panel">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="title">MANGANESE TEAM LOGIN APPROVAL</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body table-responsive table-scroll">
+                    {% if datas %}
+                        <table class="table table-hover" id="table11">
+
+                            <thead>
+                                <tr class="active" id="tdata1">
+                                    <th>S.NO</th>
+                                    <th>NAME</th>
+                                    <th>DESIGNATION</th>
+                                    <th>EMAIL</th>
+                                    <th>PHONE</th>
+                                    <th>APPROVE</th>
+                                    <th>REJECT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for data in datas %}
+                                    <!-- Table rows with data -->
+                                    <tr id="tdata2">
+                                        <td>{{ forloop.counter }}</td>
+                                        <td>{{ data.username|title }}</td>
+                                        <td>{{ data.designation|title }}</td>
+                                        <td>{{ data.email }}</td>
+                                        <td>{{ data.phone }}</td>
+
+                                        {% if data.mg_admin_lg is True %}
+                                            <td><a  id="btn1">Team Approved</a></td>
+                                            <td><a class="btn btn-danger" id="btn3">-----</a></td>
+                                        {% else %}
+                                            <td><a href="/manager/app_manganese_lg/{{data.id}}/" class="btn btn-warning" id="btn2">Approve</a></td>
+                                            <td><a href="/manager/app_manganese_lg_reject/{{data.id}}/" class="btn btn-danger" id="btn3">Reject</a></td>
+                                        {% endif %}
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    {% else %}
+                        <div class="no-teams">
+                            <p >No registered Team</p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}
+</html>
