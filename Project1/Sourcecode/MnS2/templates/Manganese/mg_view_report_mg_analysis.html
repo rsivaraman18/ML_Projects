@@ -1,0 +1,96 @@
+<!doctype html>
+{% extends 'Manganese/manganese_home.html' %}
+{% block mang_report_active %} active{% endblock %}
+{% block title %} MnS2 Quantity Report {% endblock %}
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MnS2 Quantity Report</title>
+    <link rel="stylesheet" href="{% static 'Main/bootstrap/css/bootstrap.min.css' %}">
+    <link href="{% static 'Manganese/order_view/order_view.css' %}" rel="stylesheet" type="text/css">
+
+    <style>
+    body {
+    background-image: url("{% static 'Manganese/images/g1.jpg' %}");
+    background-size: cover;
+}
+
+    .container {
+        margin-top: 150px;
+    }
+
+    .table {
+        background: linear-gradient(to right, #9195F6, #B7C9F2);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .table thead th {
+        background-color: #5c5c5c;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .table tbody tr:nth-child(odd) {
+        background-color: #F9F07A;
+    }
+
+    .table tbody tr:nth-child(even) {
+        background-color: #FBECB2;
+    }
+
+    .table tbody th,
+    .table tbody td {
+        border: none;
+        padding: 10px;
+        color: #333;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/manganese_process/mg_view_report/" class="btn btn-danger d-block mx-auto mb-3" style="width: 250px;">BACK TO MAIN REPORT PAGE</a>
+        <table class="table table-striped">
+            <thead>
+                <tr id="head1">
+                    <th scope="col">S.NO</th>
+                    <th scope="col">COMPONENT</th>
+                    <th scope="col">FORM/Description</th>
+                </tr>
+            </thead>
+            <tbody style="font-weight:bolder;">
+                <tr style="text-align:left;">
+                    <th scope="row">1</th>
+                    <td>Manganese Sulphide</td>
+                    <td>{{ mg_calculations.manganese_Comp }}</td>
+                </tr>
+                <tr style="text-align: left;">
+                    <th scope="row">2</th>
+                    <td>Manganese Sulphide Form</td>
+                    <td>{{ mg_calculations.manganese_form }}</td>
+                </tr>
+                <tr style="text-align: left;">
+                    <th scope="row">3</th>
+                    <td>Size</td>
+                    <td>{{ mg_calculations.manganese_size }}</td>
+                </tr>
+                <tr style="text-align: left;">
+                    <th scope="row">4</th>
+                    <td>Manganese Sulphide Mass</td>
+                    <td>{{ mg_calculations.manganese_mass }} gms</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+{% endblock%}
+</html>
+
+
