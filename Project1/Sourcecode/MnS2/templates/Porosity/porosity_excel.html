@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+{% extends 'Porosity/por_home.html' %}
+{% block porosity_test_result %} active{% endblock %}
+{% block title %} Porosity Excel Data {% endblock %}
+{% block content %}
+{% load static %}
+
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{% static 'Porosity/app_report_view/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'Main/bootstrap/css/bootstrap.min.css' %}">
+
+
+    <style>
+      body {
+		background-image: url("{% static 'Porosity/images/1new.jpg' %}");
+		background-size: cover;
+      }
+
+      body::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.01);
+      }
+
+      .main-top {
+        background-image:none;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+      }
+
+      #head1 {
+		height: 40px;
+		background-color: yellow;
+      }
+
+      .active {
+    	color: blue;
+      }
+
+      .fixed_header {
+		width: calc(100% - 160px);
+		table-layout: fixed;
+		border-collapse: collapse;
+		margin-left: 70px;
+		margin-right: 90px;
+      }
+
+      .fixed_header tbody {
+		display: block;
+		width: 100%;
+		overflow: auto;
+		height: 515px;
+      }
+
+      .fixed_header thead tr {
+		display: block;
+      }
+
+      .fixed_header thead {
+		background: #333;
+		color: #fff;
+      }
+
+      .fixed_header th,
+      .fixed_header td {
+		padding: 8px;
+		text-align: left;
+		width: 700px;
+      }
+
+      .table-box {
+		margin-top: 80px;
+
+      }
+
+      #box1 {
+		background: linear-gradient(to right, #ff9966, #ff5e62);
+        margin-top:-50px;
+        border-radius:5px;
+
+    </style>
+  </head>
+  <body>
+
+    <h3 class="text-primary text-center" style="font-weight:bolder;margin:25px 0px 5px 0px;">Porosity Mercury Test</h3>
+    <div class="container-fluid">
+      <div class="table-box">
+        <div >
+          <table class="fixed_header" id="box1">
+            <thead>
+              <tr>
+                <th>S.NO</th>
+                <th>Pressure (psi)</th>
+                <th>Volume of Mercury Intruded (cm³/g)</th>
+                <th>Cumulative Volume (cm³/g)</th>
+                <th>Pore Diameter (nm)</th>
+                <th>Specific Surface Area (m²/g)</th>
+                <th>Average Pore Size (nm)</th>
+                <th>Median Pore Size (nm)</th>
+                <th>Total Pore Volume (cm³/g)</th>
+                <th>Tortuosity</th>
+                <th>Permeability (mDarcy)</th>
+                <th>Adsorption Capacity (mmol/g)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for data in porosity_data %}
+              <tr style="text-align:center;">
+                <td>{{ forloop.counter }}</td>
+                <td>{{ data.pressure_psi }}</td>
+                <td>{{ data.volume_mercury_intruded }}</td>
+                <td>{{ data.cumulative_volume }}</td>
+                <td>{{ data.pore_diameter_nm }}</td>
+                <td>{{ data.specific_surface_area }}</td>
+                <td>{{ data.avg_pore_size_nm }}</td>
+                <td>{{ data.median_pore_size_nm }}</td>
+                <td>{{ data.total_pore_volume }}</td>
+                <td>{{ data.tortuosity }}</td>
+                <td>{{ data.permeability_mDarcy }}</td>
+                <td>{{ data.adsorption_capacity }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </body>
+{% endblock %}
+</html>
