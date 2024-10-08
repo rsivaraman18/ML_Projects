@@ -1,0 +1,77 @@
+{% extends 'Porosity/por_home.html' %}
+{% block upload_dataset %} active{% endblock %}
+{% block title %} Porosity Upload Dataset  {% endblock %}
+{% block content %}
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Porosity Data Upload</title>
+
+    <link rel="stylesheet" href="{% static 'Main/bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'Main/bootstrap/js/bootstrap.min.js' %}" defer></script>
+    <style>
+        body {
+			background-image: url("{% static 'Porosity/images/bg20.jpg' %}");
+			background-size: cover;
+        }
+
+
+        .main-top {
+			background-image:none;
+			background-size: cover;
+			-webkit-background-size: cover;
+			-o-background-size: cover;
+			-moz-background-size: cover;
+			-ms-background-size: cover;
+		}
+
+		#upload-box{
+            background-color:#7BD3EA;
+            border-radius:9px;
+            padding:11px;
+            margin-top:40px;
+
+		}
+
+        .bold-text {
+            font-weight: bolder;
+            margin-bottom:15px;
+        }
+
+        #title{
+            margin-top:50px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1 class="text-primary text-center" id="title">Porosity Test Requirements</h1>
+    <div class="container-fluid">
+        <div class="offset-md-4 col-md-4 d-flex justify-content-center" id="upload-box">
+
+            <form action="/porosity_analysis/upload_dataset/{{client_id}}/" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div>
+                    <label for="formFileLg" class="d-flex justify-content-center form-label text-danger bold-text">Porosity Analysis</label>
+                    <input class="form-control form-control-lg" id="formFileLg" type="file" name="porosity-file" accept=".csv">
+                </div>
+
+                <div class="btn d-flex justify-content-center">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="reset" class="btn btn-danger ml-2">Reset</button>
+                </div>
+            </form>
+
+
+
+        </div>
+    </div>
+</body>
+{% endblock %}
+</html>
