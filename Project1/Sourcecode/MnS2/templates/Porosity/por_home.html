@@ -1,0 +1,249 @@
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>{% block title %}Porosity Home{% endblock %}</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Coiffure Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+
+	<link rel="stylesheet" href="{% static 'Porosity/css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'Porosity/css/style.css' %}" type="text/css" media="all" />
+	<link href="{% static 'Porosity/css/font-awesome.min.css' %}" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext"
+	 rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Hind:300,400,500,600,700&amp;subset=devanagari,latin-ext" rel="stylesheet">
+
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<style>
+		.active{
+			background-color:red;
+			border-radius:5px;
+		}
+
+	</style>
+
+
+</head>
+
+<body>
+	<script>
+      {% for msg in messages %}
+         alert('{{ msg }}');
+      {% endfor %}
+    </script>
+	<!-- main banner -->
+	<div class="main-top" id="home">
+
+		<header style="background-color:lightred;"  id="header">
+			<div class="container-fluid">
+				<div class="header d-md-flex justify-content-between align-items-center py-2 px-xl-3 px-2 mx-xl-5 mx-lg-3 mx-2">
+					<!-- nav -->
+					<div id="logo">
+						<h1 style="margin-left:-10px;"><a href="/porosity_analysis/por_home/">Porosity</a></h1>
+					</div>
+					<div class="nav_w3ls" >
+						<nav>
+							<label for="drop" class="toggle">Menu</label>
+							<input type="checkbox" id="drop" />
+							<ul class="menu" =>
+
+								<li class="{% block porosity_home %}{% endblock %}">
+                            		<a href="/porosity_analysis/por_home/">Home</a>
+                        		</li>
+
+								<li class="{% block view_integration_report %}{% endblock %}">
+                            		<a href="/porosity_analysis/view_app_report/">View </a>
+                        		</li>
+
+
+								<li class=" {% block upload_dataset %}{% endblock %}">
+                            		<a href="/porosity_analysis/porosity_upload_view/">Upload Test</a>
+                        		</li>
+
+								<li class=" {% block porosity_test %}{% endblock %}">
+                            		<a href="/porosity_analysis/porosity_test/">Porosity</a>
+                        		</li>
+
+								<li class=" {% block porosity_test_result %}{% endblock %}">
+                            		<a href="/porosity_analysis/porosity_test_result/">Analysis</a>
+                        		</li>
+
+
+								<li class=" {% block porosity_final_report %}{% endblock %}">
+                            		<a href="/porosity_analysis/porosity_fin_report/">Report</a>
+                        		</li>
+
+								<li class=" {% block new_test_result %}{% endblock %}">
+                            		<a href="/porosity_analysis/new_test_result/">Conductivity Test</a>
+                        		</li>
+								<li class=" {% block logout %}{% endblock %}">
+                            		<li><a href="/porosity_analysis/por_logout/">Logout</a></li>
+                        		</li>
+
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+{% block content %}
+
+		<div class="banner_w3lspvt">
+			<div class="container-fluid">
+				<div class="w3ls_banner_txt pl-sm-5">
+					<h3 class="w3ls_pvt-title text-wh let">Porosity <br> <span class="text-da">Analysis</span> <br>Techniques</h3>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<section class="about py-5" id="about">
+		<div class="container py-xl-5 py-lg-3">
+		   <div class="row py-xl-5">
+			  <div class="col-lg-5 pr-xl-4">
+				 <p class="css-typing sub-title-top text-bl mb-3">Welcome to the Symphony of Circuits</p>
+				 <h3 class="title-w3-ab">Exploring the <span class="clr-th">Limitless Possibilities</span> of Electronics</h3>
+			  </div>
+			  <div class="col-lg-6 offset-lg-1 pr-lg-4 mt-lg-0 mt-4 about-right-mo">
+				 <p>From sensing the unseen to powering the future, electronics shape our world in countless ways. Dive into this captivating realm where innovation and efficiency dance hand-in-hand.</p>
+				 <p class="mt-4">Here, you'll discover:</p>
+				 <ul>
+					<li>How sensors translate whispers of the world into digital insights.</li>
+					<li>The intricacies of memory technologies that preserve our digital legacy.</li>
+					<li>The power of electronics to harness energy from the sun and wind.</li>
+					<li>The boundless impact of electronics on healthcare, communication, and beyond.</li>
+				 </ul>
+
+			  </div>
+		   </div>
+		</div>
+
+	</section>
+
+
+	<!-- middle section slider -->
+	<div class="slider-effest bg-li py-5" id="latest">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="midd-slider">
+						<div class="csslider infinity" id="slider1">
+							<input type="radio" name="slides" checked="checked" id="slides_1" />
+							<input type="radio" name="slides" id="slides_2" />
+							<input type="radio" name="slides" id="slides_3" />
+							<input type="radio" name="slides" id="slides_4" />
+							<ul>
+								<li>
+									<div class="slider-info">
+										<img src="{% static 'Porosity/images/m2.jpg' %}" alt="" class="img-fluid" />
+									</div>
+								</li>
+								<li>
+									<div class="slider-info">
+										<img src="{% static 'Porosity/images/m3.jpg' %}" alt="" class="img-fluid" />
+									</div>
+								</li>
+								<li>
+									<div class="slider-info">
+										<img src="{% static 'Porosity/images/m4.jpg' %}" alt="" class="img-fluid" />
+									</div>
+								</li>
+								<li>
+									<div class="slider-info">
+										<img src="{% static 'Porosity/images/m1.jpg' %}" alt="" class="img-fluid" />
+									</div>
+								</li>
+							</ul>
+
+							<div class="navigation">
+								<div>
+									<label for="slides_1"></label>
+									<label for="slides_2"></label>
+									<label for="slides_3"></label>
+									<label for="slides_4"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-5 col-lg-6 offset-xl-1 mt-xl-5 mt-lg-0 mt-5 pt-lg-2 pt-5 pr-xl-4">
+				  <p class="sub-title-top text-bl mb-3">Unleash the Beauty of Innovation</p>
+				  <h3 class="title-w3-ab mb-3">Discover Designs That Spark Brilliance</h3>
+				  <p class="mt-4">Explore the intricate circuits that power our world, where every component is a masterpiece of precision and ingenuity. Behold the elegance of microelectronics, where innovation dances with efficiency, and every connection whispers a symphony of possibilities.</p>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- //middle section slider -->
+
+
+
+	<!-- grids section -->
+	<div class="grids-w3ovt py-5" id="what">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="row">
+				<div class="col-md-4 mb-md-0 mb-5">
+				  <h6 class="top-grid-text text-uppercase"><label>01.</label>Invisible Circuitry, Visible Impact</h6>
+				  <h3 class="grid-one-text mt-2 mb-4">Discover the Magic Beneath the Surface</h3>
+				  <p>Unravel the mysteries of microelectronics, where tiny transistors orchestrate a symphony of power and innovation. Explore the endless possibilities that spark from the smallest of components.</p>
+				</div>
+				<div class="col-md-4 mb-md-0 mb-5">
+				  <h6 class="top-grid-text text-uppercase"><label>02.</label>Sensors That See, Hear, and Feel</h6>
+				  <h3 class="grid-one-text mt-2 mb-4">Experience the World Through Electronic Eyes</h3>
+				  <p>Delve into the realm of sensors that translate physical phenomena into digital insights. Witness the power of electronics to sense temperature, pressure, motion, and beyond, unlocking a world of possibilities.</p>
+				</div>
+				<div class="col-md-4">
+				  <h6 class="top-grid-text text-uppercase"><label>03.</label>Powering Our Connected Future</h3>
+				  <h3 class="grid-one-text mt-2 mb-4">Harnessing Energy for a Brighter Tomorrow</h3>
+				  <p>Explore the innovations that drive energy efficiency and sustainability. Discover the batteries, supercapacitors, and solar technologies that are redefining our relationship with energy and shaping a more resilient future.</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- //grids section -->
+
+
+
+	<!-- middle -->
+	<div class="middle py-5">
+		<div class="container-fluid row py-xl-5 py-lg-3">
+		  <div class="offset-xl-8 offset-lg-6 offset-md-4 welcome-left text-right py-md-5 py-3">
+			<h5>Ignite Your Innovation</h5>
+			<h3 class="my-3">Engineering Solutions That Power Progress</h3>
+			<p class="mb-3">Discover the endless possibilities that emerge when ingenuity meets electronics. We partner with you to navigate the complexities of design and bring your boldest ideas to life. From intricate circuit boards to seamless integrations, we're here to empower your vision and create impact that lasts.</p>
+
+		  </div>
+		</div>
+
+	</div>
+
+	<a href="#home" class="move-top text-center"></a>
+
+
+{% endblock %}
+</body>
+
+
+</html>
