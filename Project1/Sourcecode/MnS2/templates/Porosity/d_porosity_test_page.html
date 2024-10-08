@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+{% extends 'Porosity/por_home.html' %}
+{% block porosity_test %} active{% endblock %}
+{% block title %} Porosity Test {% endblock %}
+{% block content %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'Porosity/app_report_view/css/style.css' %}">
+    <style>
+        body {
+            background-image: url("{% static 'Porosity/images/bg20.jpg' %}");
+            background-size: cover;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.01);
+        }
+
+        .main-top {
+            background-image: none;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -ms-background-size: cover;
+        }
+
+        #head1 {
+            height: 40px;
+            background-color: yellow;
+        }
+
+        .active {
+            color: blue;
+        }
+
+        #dec1 {
+            margin: 7px;
+            font-weight: bolder;
+            font-size: 30px;
+            font-style: italic;
+            border-radius: 7px;
+            padding: 7px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .scrollable-table {
+            max-height: 400px;
+            overflow-x: auto;
+            overflow-y: auto;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="title">
+        <div class="row align-items-center">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h3 class="text-primary" id="dec1">Porosity Test</h3>
+            </div>
+        </div>
+    </div>
+    <div class="offset-md-1 col-md-10">
+        <div class="table-responsive scrollable-table"> <!-- Added scrollable-table class -->
+            <table class="table table-striped table-hover">
+                <thead class="thead-dark" style="line-height:0;font-weight:bolder">
+                <tr>
+                    <th>S.NO</th>
+                    <th>CID</th>
+                    <th>ORDER ID</th>
+                    <th>CLIENT NAME</th>
+                    <th>PRODUCT</th>
+                    <th>QUANTITY</th>
+                    <th>POROSITY TEST</th>
+                </tr>
+                </thead>
+                {% if client_orders %}
+                <tbody style="line-height:1;background:white;">
+                	{% for order in client_orders %}
+						<tr style="font-weight:bolder;">
+							<th scope="row">{{ forloop.counter }}</th>
+							<td>{{ order.consumer_id }}</td>
+							<td>ORD10{{ order.id }}</td>
+							<td>{{ order.username|title }}</td>
+							<td>{{ order.product|title }}</td>
+							<td>{{ order.quantity }}</td>
+							{% if order.fin_porosity_value is True %}
+							<td><a href="" class="btn btn-danger"> Test Analysed</a></td>
+							{% else %}
+							<td><a href="/porosity_analysis/porosity_process/{{order.id}}/" class="btn btn-warning">TEST POROSITY</a></td>
+							{% endif %}
+						</tr>
+                	{% endfor %}
+                </tbody>
+                {% else %}
+                	<tbody style="background:white;font-weight:bolder;text-align:center;color:red;text-transform:uppercase;">
+                    	<tr>
+                            <td colspan="8">NO Reports</td>
+                        </tr>
+                    </tbody>
+                {% endif %}
+
+
+            </table>
+        </div>
+    </div>
+</div>
+<script src="{% static 'Porosity/app_report_view/js/jquery.min.js' %}"></script>
+<script src="{% static 'Porosity/app_report_view/js/popper.js' %}"></script>
+<script src="{% static 'Porosity/app_report_view/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'Porosity/app_report_view/js/main.js' %}"></script>
+</body>
+{% endblock %}
+</html>
