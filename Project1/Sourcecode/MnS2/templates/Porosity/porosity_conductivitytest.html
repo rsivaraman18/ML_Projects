@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <base href="/static/form/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conductivity Test</title>
+
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+			background-image: url("{% static 'Porosity/images/bg20.jpg' %}");
+			background-size: cover;
+        }
+
+        #units{
+            text-transform:none;
+        }
+
+        #materials{
+            box-sizing: border-box;
+            border: 1px solid #ebebeb;
+            width:200px;
+            padding: 14px 20px;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -o-border-radius: 5px;
+            -ms-border-radius: 5px;
+            font-size: 14px;
+            font-family: 'Poppins';
+            background-color:#8CB9BD;
+            font-weight:bold;
+        }
+
+        #pressure,#temperature,#concentration,#strain,#dopant,#pore,#crystal,#melt,#equilibrium{
+            background-color:#8CB9BD;
+            font-weight:bold;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #219C90;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
+        }
+        #reset{
+            background-color:#FAEF5D;
+        }
+
+           #dec1{
+			margin:7px;
+			font-weight:bolder;
+			font-size:30px;
+			font-style:italic;
+			border-radius:7px;
+			padding:7px;
+			margin-bottom:10px;
+			text-transform:uppercase;
+
+		}
+
+
+<!--End Test Button Css        -->
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+ <script>
+      {% for msg in messages %}
+         alert('{{ msg }}');
+      {% endfor %}
+    </script>
+    <div class="main">
+        <div class="container">
+            <div class="signup-content" >
+                <div class="signup-img">
+                    <img src="{% static 'Porosity/images/bg20.jpg' %}" alt="">
+
+                    <div class="signup-img-content">
+                        <h2>Lets Test {{id}}</h2>
+                        <p>Conductivity Anlaysis</p>
+                        <a href="/porosity_analysis/new_test_result/" class="back-button">Back to Porosity</a>
+
+                    </div>
+
+
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form" action="/porosity_analysis/test1/{{id}}/" autocomplete="off">
+                        {% csrf_token %}
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <label for="pressure" class="required">Pressure <span id="units">(MPa)</span></label>
+                                    <input type="text" name="pressure" placeholder="5000 - 10000 MPa" id="pressure" required />
+                                </div>
+
+                                <div class="form-input">
+                                    <label for="temperature" class="required">Temperature <span id="units">(°C)</span></label>
+                                    <input type="text" name="temperature" placeholder="100 - 800 °C" id="temperature" required />
+                                </div>
+
+
+
+                                <div class="form-input" style="margin-top:0px;">
+                                    <label for="strain" class="required">strain<span id="units">(%)</span></label>
+                                    <input type="text" name="strain" placeholder="0 - 10%" id="strain" required />
+                                </div>
+
+                                <div class="form-input" >
+                                    <label for="materials" class="required">Materials</label>
+                                    <select class="form-input" name="material" class="field space" id="materials" required>
+                                        <option value="" selected disabled>Select Material</option>
+                                        <option value="Al">Aluminum(Al)</option>
+<!--                                        <option value="Ga">Gallium(Ga)</option>-->
+<!--                                        <option value="In">Indium(In)</option>-->
+<!--                                        <option value="Sn">Tin(Sn)</option>-->
+                                        <option value="Zn">Zinc(Zn)</option>
+                                        <option value="Fe">Iron(Fe)</option>
+                                        <option value="Si">Silicon(Si)</option>
+<!--                                        <option value="Ti">Titanium(Ti)</option>-->
+                                        <option value="Cu">Copper(Cu)</option>
+                                        <option value="Mg">Magnesium(Mg)</option>
+                                    </select>
+                                </div>
+
+                                 <div class="form-input" style="margin-top:-30px;">
+                                    <label for="concentration" >Malterial Concentrate<span id="units">(mol/cm³)</label>
+                                    <input type="text" name="concentration" placeholder="0 - 10 mol/cm³" id="concentration" required />
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <label for="crystal" class="required">Crystallize Size <span id="units">(nm)</span> </label>
+                                    <input type="text" name="CrystallizeSize" placeholder="0 - 100 nm" id="crystal" required />
+                                </div>
+
+                                 <div class="form-input" >
+                                    <label for="equilibrium" class="required">Equilibrium Time <span id="units">(sec)</span></label>
+                                    <input type="text" name="EquilibriumTime" placeholder="Minimum 1 seconds" id="equilibrium" required />
+                                </div>
+
+                                <div class="form-input">
+                                    <label for="pore" class="required">Pore Size <span id="units">(nm)</span></label>
+                                    <input type="text" name="PoreSize" placeholder="2 - 50 nm" id="pore" required />
+                                </div>
+
+                                <div class="form-input">
+                                    <label for="melt" class="required" >Melting Point<span id="units">(°C)</span> </label>
+                                    <input type="text" name="mp" placeholder="0 to 1300°C"  id="melt" required readonly="readonly" />
+                                </div>
+                                    <br>
+                                    <br>
+
+                                 <div class="form-input" style="margin-top:-30px;">
+                                    <label for="dopant" class="required">Dopant Quantity <span id="units">(gms)</span>  </label>
+                                    <input type="text" name="quantity" placeholder="gms" id="dopant" required readonly="readonly" />
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-submit" style="text-align:center;">
+                            <input type="submit" value="Start Test" class="submit" id="submit" name="submit" />
+
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+
+<script>
+document.getElementById('register-form').addEventListener('submit', function(event) {
+    function showError(fieldName, range) {
+        alert(fieldName + ' should be between ' + range);
+    }
+
+    // Validation logic
+    function validateForm() {
+        var pressure = parseFloat(document.getElementById('pressure').value);
+        var temperature = parseFloat(document.getElementById('temperature').value);
+        var concentration = parseFloat(document.getElementById('concentration').value);
+        var strain = parseFloat(document.getElementById('strain').value);
+        var crystalSize = parseFloat(document.getElementById('crystal').value);
+        var poreSize = parseFloat(document.getElementById('pore').value);
+        var equilibriumTime = parseFloat(document.getElementById('equilibrium').value);
+        var meltingPoint = parseFloat(document.getElementById('melt').value);
+        var dopantQuantity = parseFloat(document.getElementById('dopant').value);
+
+        if (pressure < 5000 || pressure > 10000) {
+            showError('Pressure', '5000 - 10000 MPa');
+            return false;
+        }
+        if (temperature < 100 || temperature > 800) {
+            showError('Temperature', '100 - 800 °C');
+            return false;
+        }
+        if (concentration < 0 || concentration > 10) {
+            showError('Concentration', '0 - 10 mol/cm³');
+            return false;
+        }
+        if (strain < 0 || strain > 10) {
+            showError('Strain', '0 - 10%');
+            return false;
+        }
+        if (crystalSize < 0 || crystalSize > 100) {
+            showError('Crystallize Size', '0 - 100 nm');
+            return false;
+        }
+        if (poreSize < 2 || poreSize > 50) {
+            showError('Pore Size', '2 - 50 nm');
+            return false;
+        }
+        if (equilibriumTime <= 1 || equilibriumTime > 86400) {
+            showError('Equilibrium Time', 'Above 1 second and below 86400 seconds');
+            return false;
+        }
+
+        return true; // Form is valid
+    }
+
+    // Validate the form and submit if valid
+    if (!validateForm()) {
+        event.preventDefault();
+    }
+});
+</script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var material_mp = {'Al':660 , 'In':156 , 'Sn':231 , 'Zn':419 , 'Si':1414 , 'Ti' : 1668 ,'Cu':1084 , 'Mg':650 ,'Ga':29 ,'Fe':1538 };
+
+    var materialSelect = document.getElementById('materials');
+    var concentrationInput = document.getElementById('concentration');
+    var dopantInput = document.getElementById('dopant');
+    var meltInput = document.getElementById('melt');
+
+    materialSelect.addEventListener('change', function() {
+        var selectedMaterial = materialSelect.value;
+        if (selectedMaterial in material_mp) {
+            meltInput.value = material_mp[selectedMaterial];
+        }
+    });
+
+    concentrationInput.addEventListener('input', function() {
+        var concentration = parseFloat(concentrationInput.value);
+        if (!isNaN(concentration)) {
+            dopantInput.value =  {{data.manganese_mass}} * concentration;
+            var maxDopant = {{data.manganese_mass}} * concentration;
+            dopantInput.max = maxDopant;
+            if (parseFloat(dopantInput.value) > maxDopant) {
+                alert("Dopant quantity exceeds the maximum limit (" + maxDopant + ")");
+                dopantInput.value = maxDopant;
+            }
+        }
+    });
+});
+
+</script>
+
+
+</html>
