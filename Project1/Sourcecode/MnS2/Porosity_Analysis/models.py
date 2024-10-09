@@ -23,3 +23,6 @@ class Porosity_data(models.Model):
     permeability_mDarcy = models.CharField(max_length=100, blank=True)
     adsorption_capacity = models.CharField(max_length=100, blank=True)
     client_id = models.CharField(max_length=100, blank=True)
+
+
+## Created Models Successfully
