@@ -1,0 +1,501 @@
+Chitin Extraction Method,Chitosan Synthesis Reagent,Viscosity (cP),Reagent Concentration (%),Molecular Weight (kDa),Acetic Acid (%),Required Purity (%),Desired Quantity (kg),Chitosan Synthesis Efficiency (%)
+Acid-Base,Ethanol,30,2,185,1.71,60.1,5,71.0
+Acid-Base,Methanol,30,2,185,1.71,60.1,6,71.1
+Acid-Base,Ethanol,30,2,185,1.71,60.2,6,71.1
+Acid-Base,Methanol,30,2,185,1.78,60.5,7,71.2
+Acid-Base,Ethanol,30,2,185,1.78,60.5,7,71.2
+Acid-Base,Methanol,30,2,185,1.78,60.6,8,71.3
+Acid-Base,Ethanol,30,2,185,1.78,60.8,8,71.3
+Acid-Base,Methanol,30,2,185,1.79,60.9,9,71.4
+Acid-Base,Ethanol,30,2,185,1.79,61.0,9,71.4
+Acid-Base,Methanol,30,2,185,1.80,61.1,10,71.5
+Acid-Base,Ethanol,30,2,185,1.82,61.2,10,71.5
+Acid-Base,Methanol,30,2,185,1.83,61.4,11,71.6
+Acid-Base,Ethanol,30,2,185,1.84,61.5,11,71.7
+Acid-Base,Ethanol,30,2,185,1.85,61.6,12,71.7
+Acid-Base,Methanol,30,2,185,1.86,61.7,12,71.8
+Acid-Base,Ethanol,30,2,185,1.88,61.8,13,71.8
+Acid-Base,Methanol,30,2,185,1.89,62.0,13,71.9
+Acid-Base,Ethanol,30,2,185,1.90,62.1,14,71.9
+Acid-Base,Methanol,30,2,185,1.91,62.2,14,72.0
+Acid-Base,Ethanol,30,2,185,1.92,62.3,15,72.0
+Acid-Base,Methanol,30,2,185,1.93,62.4,15,72.1
+Acid-Base,Ethanol,30,2,185,1.94,62.6,16,72.1
+Acid-Base,Methanol,30,2,185,1.95,62.7,16,72.2
+Acid-Base,Ethanol,30,2,185,1.96,62.8,17,72.2
+Acid-Base,Methanol,30,2,185,1.97,62.9,17,72.3
+Acid-Base,Ethanol,30,2,185,1.98,63.1,18,72.3
+Acid-Base,Ethanol,30,2,185,1.99,63.2,18,72.4
+Acid-Base,Methanol,30,2,185,2.00,63.3,19,72.4
+Acid-Base,Ethanol,30,2,185,2.02,63.4,19,72.5
+Acid-Base,Methanol,30,2,185,2.03,63.5,20,72.6
+Acid-Base,Ethanol,30,2,185,2.04,63.7,20,72.6
+Acid-Base,Methanol,30,2,185,2.05,63.8,21,72.7
+Acid-Base,Ethanol,30,2,185,2.06,63.9,21,72.7
+Acid-Base,Methanol,30,2,185,2.07,64.0,22,72.8
+Acid-Base,Ethanol,30,2,185,2.08,64.1,22,72.8
+Acid-Base,Methanol,30,2,185,2.09,64.3,23,72.9
+Acid-Base,Ethanol,30,2,185,2.10,64.4,23,72.9
+Acid-Base,Methanol,30,2,185,2.11,64.5,24,73.0
+Acid-Base,Ethanol,30,2,185,2.12,64.6,24,73.0
+Acid-Base,Ethanol,30,2,185,2.13,64.7,25,73.1
+Acid-Base,Methanol,30,2,185,2.14,64.9,25,73.1
+Acid-Base,Ethanol,30,2,185,2.15,65.0,26,73.2
+Acid-Base,Methanol,30,2,185,2.17,65.1,26,73.2
+Acid-Base,Ethanol,30,2,185,2.18,65.2,27,73.3
+Acid-Base,Methanol,30,2,185,2.19,65.4,27,73.3
+Acid-Base,Ethanol,30,2,185,2.20,65.5,28,73.4
+Acid-Base,Methanol,30,2,185,2.21,65.6,28,73.5
+Acid-Base,Ethanol,30,2,185,2.22,65.7,29,73.5
+Acid-Base,Methanol,30,2,185,2.23,65.8,29,73.6
+Acid-Base,Ethanol,30,2,185,2.24,66.0,30,73.6
+Acid-Base,Methanol,30,2,185,2.25,66.1,30,73.7
+Acid-Base,Ethanol,30,2,185,2.26,66.2,31,73.7
+Acid-Base,Methanol,30,2,185,2.27,66.3,31,73.8
+Acid-Base,Ethanol,30,2,185,2.28,66.4,32,73.8
+Acid-Base,Ethanol,30,2,185,2.29,66.6,32,73.9
+Acid-Base,Methanol,30,2,185,2.30,66.7,33,73.9
+Acid-Base,Ethanol,30,2,185,2.32,66.8,33,74.0
+Acid-Base,Methanol,30,2,185,2.33,66.9,34,74.0
+Acid-Base,Ethanol,30,2,185,2.34,67.0,34,74.1
+Acid-Base,Methanol,30,2,185,2.35,67.2,35,74.1
+Acid-Base,Ethanol,30,2,185,2.36,67.3,35,74.2
+Acid-Base,Methanol,30,2,185,2.37,67.4,36,74.2
+Acid-Base,Ethanol,30,2,185,2.38,67.5,36,74.3
+Acid-Base,Methanol,30,2,185,2.39,67.6,37,74.4
+Acid-Base,Ethanol,30,2,185,2.40,67.8,37,74.4
+Acid-Base,Methanol,30,2,185,2.41,67.9,38,74.5
+Acid-Base,Ethanol,30,2,185,2.42,68.0,38,74.5
+Acid-Base,Ethanol,30,2,185,2.43,68.1,39,74.6
+Acid-Base,Methanol,30,2,185,2.44,68.3,39,74.6
+Acid-Base,Ethanol,30,2,185,2.45,68.4,40,74.7
+Acid-Base,Methanol,30,2,185,2.47,68.5,40,74.7
+Acid-Base,Ethanol,30,2,185,2.48,68.6,41,74.8
+Acid-Base,Methanol,30,2,185,2.49,68.7,41,74.8
+Acid-Base,Ethanol,30,2,185,2.50,68.9,42,74.9
+Acid-Base,Methanol,30,2,185,2.51,69.0,42,74.9
+Acid-Base,Ethanol,30,2,185,2.52,69.1,43,75.0
+Acid-Base,Methanol,30,2,185,2.53,69.2,43,75.0
+Acid-Base,Ethanol,30,2,185,2.54,69.3,44,75.1
+Acid-Base,Methanol,30,2,185,2.55,69.5,44,75.1
+Acid-Base,Ethanol,30,2,185,2.56,69.6,45,75.2
+Acid-Base,Ethanol,30,2,185,2.57,69.7,45,75.3
+Acid-Base,Methanol,30,2,185,2.58,69.8,46,75.3
+Acid-Base,Ethanol,30,2,185,2.59,69.9,46,75.4
+Acid-Base,Methanol,30,2,185,2.61,70.1,47,75.4
+Acid-Base,Ethanol,30,2,185,2.62,70.2,47,75.5
+Enzymatic,Methanol,30,2,190,2.63,70.3,48,75.5
+Enzymatic,Ethanol,30,2,190,2.64,70.4,48,75.6
+Enzymatic,Propanol,30,2,190,2.65,70.6,49,75.6
+Enzymatic,Butanol,30,2,190,2.66,70.7,49,75.7
+Enzymatic,Ethanol,30,2,190,2.67,70.8,50,75.7
+Enzymatic,Propanol,30,2,190,2.68,70.9,50,75.8
+Enzymatic,Butanol,30,2,190,2.69,71.0,51,75.8
+Enzymatic,Ethanol,30,2,190,2.70,71.2,51,75.9
+Enzymatic,Propanol,30,2,190,2.71,71.3,52,75.9
+Enzymatic,Butanol,30,2,190,2.72,71.4,52,76.0
+Enzymatic,Ethanol,30,2,190,2.73,71.5,53,76.0
+Enzymatic,Propanol,30,2,190,2.74,71.6,53,76.1
+Enzymatic,Butanol,30,2,190,2.76,71.8,54,76.2
+Enzymatic,Ethanol,30,2,190,2.77,71.9,54,76.2
+Enzymatic,Propanol,30,2,190,2.78,72.0,55,76.3
+Enzymatic,Butanol,30,2,190,2.79,72.1,55,76.3
+Enzymatic,Ethanol,40,2,190,2.80,72.2,56,76.4
+Enzymatic,Propanol,40,2,190,2.81,72.4,56,76.4
+Enzymatic,Butanol,40,2,190,2.82,72.5,57,76.5
+Enzymatic,Ethanol,40,2,190,2.83,72.6,57,76.5
+Enzymatic,Propanol,40,2,190,2.84,72.7,58,76.6
+Enzymatic,Butanol,40,2,190,2.85,72.9,58,76.6
+Enzymatic,Ethanol,40,2,190,2.86,73.0,59,76.7
+Enzymatic,Propanol,40,2,190,2.87,73.1,59,76.7
+Enzymatic,Butanol,40,2,190,2.88,73.2,60,76.8
+Enzymatic,Ethanol,40,2,190,2.89,73.3,60,76.8
+Enzymatic,Propanol,40,2,190,2.91,73.5,61,76.9
+Enzymatic,Butanol,40,2,190,2.92,73.6,61,77.0
+Enzymatic,Ethanol,40,2,190,2.93,73.7,62,77.0
+Enzymatic,Propanol,40,2,190,2.94,73.8,62,77.1
+Enzymatic,Butanol,40,2,190,2.95,73.9,63,77.1
+Enzymatic,Ethanol,40,2,190,2.96,74.1,63,77.2
+Enzymatic,Propanol,40,2,190,2.97,74.2,64,77.2
+Enzymatic,Butanol,40,2,191,2.98,74.3,64,77.3
+Enzymatic,Ethanol,40,2,191,2.99,74.4,65,77.3
+Enzymatic,Propanol,40,2,191,3.00,74.5,65,77.4
+Enzymatic,Butanol,40,2,191,3.01,74.7,66,77.4
+Enzymatic,Ethanol,40,2,191,3.02,74.8,66,77.5
+Enzymatic,Propanol,40,2,191,3.03,74.9,67,77.5
+Enzymatic,Butanol,40,2,191,3.04,75.0,67,77.6
+Enzymatic,Ethanol,40,2,191,3.06,75.2,68,77.6
+Enzymatic,Propanol,40,2,191,3.07,75.3,68,77.7
+Enzymatic,Butanol,40,2,191,3.08,75.4,69,77.7
+Enzymatic,Ethanol,40,2,191,3.09,75.5,69,77.8
+Enzymatic,Propanol,40,2,191,3.10,75.6,70,77.9
+Enzymatic,Butanol,40,2,191,3.11,75.8,70,77.9
+Enzymatic,Ethanol,40,2,191,3.12,75.9,71,78.0
+Enzymatic,Propanol,40,2,191,3.13,76.0,71,78.0
+Enzymatic,Butanol,40,2,191,3.14,76.1,72,78.1
+Enzymatic,Ethanol,40,2,192,3.15,76.2,72,78.1
+Enzymatic,Propanol,40,2,192,3.16,76.4,73,78.2
+Enzymatic,Butanol,40,2,192,3.17,76.5,73,78.2
+Enzymatic,Ethanol,40,2,192,3.18,76.6,74,78.3
+Enzymatic,Propanol,40,2,192,3.20,76.7,74,78.3
+Enzymatic,Butanol,40,2,192,3.21,76.8,75,78.4
+Enzymatic,Ethanol,40,2,192,3.22,77.0,75,78.4
+Enzymatic,Propanol,40,2,192,3.23,77.1,76,78.5
+Enzymatic,Butanol,40,2,192,3.24,77.2,76,78.5
+Enzymatic,Ethanol,40,2,192,3.25,77.3,77,78.6
+Enzymatic,Propanol,40,2,192,3.26,77.5,77,78.6
+Enzymatic,Butanol,40,2,192,3.27,77.6,78,78.7
+Enzymatic,Butanol,40,2,192,3.28,77.7,78,78.8
+Enzymatic,Butanol,40,2,192,3.29,77.8,79,78.8
+Enzymatic,Butanol,40,2,192,3.30,77.9,79,78.9
+Enzymatic,Propanol,40,2,192,3.31,78.1,80,78.9
+Enzymatic,Butanol,40,2,193,3.32,78.2,80,79.0
+Enzymatic,Ethanol,40,2,193,3.33,78.3,81,79.0
+Enzymatic,Propanol,40,2,193,3.35,78.4,81,79.1
+Enzymatic,Butanol,40,2,193,3.36,78.5,82,79.1
+Enzymatic,Butanol,40,2,193,3.37,78.7,82,79.2
+Enzymatic,Butanol,40,2,193,3.38,78.8,83,79.2
+Enzymatic,Butanol,40,4,193,3.39,78.9,83,79.3
+Enzymatic,Propanol,40,4,193,3.40,79.0,84,79.3
+Enzymatic,Butanol,40,4,193,3.41,79.1,84,79.4
+Enzymatic,Ethanol,40,4,193,3.42,79.3,85,79.4
+Enzymatic,Propanol,40,4,193,3.43,79.4,85,79.5
+Enzymatic,Butanol,40,4,193,3.44,79.5,86,79.5
+Enzymatic,Butanol,40,4,193,3.45,79.6,86,79.6
+Microwave-Assisted,Butanol,40,4,193,3.46,79.7,87,79.7
+Microwave-Assisted,Butanol,40,4,193,3.47,79.9,87,79.7
+Microwave-Assisted,Propanol,40,4,193,3.48,80.0,88,79.8
+Microwave-Assisted,Butanol,40,4,194,3.50,80.1,88,79.8
+Microwave-Assisted,Ethanol,40,4,194,3.51,80.2,89,79.9
+Microwave-Assisted,Propanol,40,4,194,3.52,80.4,89,79.9
+Microwave-Assisted,Butanol,40,4,194,3.53,80.5,90,80.0
+Microwave-Assisted,Butanol,40,4,194,3.54,80.6,90,80.0
+Microwave-Assisted,Butanol,40,4,194,3.55,80.7,91,80.1
+Microwave-Assisted,Butanol,40,4,194,3.56,80.8,91,80.1
+Microwave-Assisted,Propanol,50,4,194,3.57,81.0,92,80.2
+Microwave-Assisted,Butanol,50,4,194,3.58,81.1,92,80.2
+Microwave-Assisted,Ethanol,50,4,194,3.59,81.2,93,80.3
+Microwave-Assisted,Propanol,50,4,194,3.60,81.3,93,80.3
+Microwave-Assisted,Butanol,50,4,194,3.61,81.4,94,80.4
+Microwave-Assisted,Butanol,50,4,194,3.62,81.6,94,80.4
+Microwave-Assisted,Butanol,50,4,194,3.63,81.7,95,80.5
+Microwave-Assisted,Butanol,50,4,194,3.65,81.8,95,80.6
+Microwave-Assisted,Propanol,50,4,194,3.66,81.9,96,80.6
+Microwave-Assisted,Butanol,50,4,195,3.67,82.0,96,80.7
+Microwave-Assisted,Ethanol,50,4,195,3.68,82.2,97,80.7
+Microwave-Assisted,Propanol,50,4,195,3.69,82.3,97,80.8
+Microwave-Assisted,Butanol,50,4,195,3.70,82.4,98,80.8
+Microwave-Assisted,Butanol,50,4,195,3.71,82.5,98,80.9
+Microwave-Assisted,Butanol,50,4,195,3.72,82.7,99,80.9
+Microwave-Assisted,Butanol,50,4,195,3.73,82.8,99,81.0
+Microwave-Assisted,Propanol,50,4,195,3.74,82.9,100,81.0
+Microwave-Assisted,Butanol,50,4,195,3.75,83.0,100,81.1
+Microwave-Assisted,Ethanol,50,4,195,3.76,83.1,101,81.1
+Microwave-Assisted,Propanol,50,4,195,3.77,83.3,101,81.2
+Microwave-Assisted,Butanol,50,4,195,3.79,83.4,102,81.2
+Microwave-Assisted,Butanol,50,4,195,3.80,83.5,102,81.3
+Microwave-Assisted,Butanol,50,4,195,3.81,83.6,103,81.3
+Microwave-Assisted,Butanol,50,4,195,3.82,83.7,103,81.4
+Microwave-Assisted,Propanol,50,4,195,3.83,83.9,104,81.5
+Microwave-Assisted,Butanol,50,4,196,3.84,84.0,104,81.5
+Microwave-Assisted,Ethanol,50,4,196,3.85,84.1,105,81.6
+Microwave-Assisted,Propanol,50,4,196,3.86,84.2,105,81.6
+Microwave-Assisted,Butanol,50,4,196,3.87,84.3,106,81.7
+Microwave-Assisted,Butanol,50,4,196,3.88,84.5,106,81.7
+Microwave-Assisted,Butanol,50,4,196,3.89,84.6,107,81.8
+Microwave-Assisted,Butanol,50,4,196,3.90,84.7,107,81.8
+Microwave-Assisted,Propanol,50,4,196,3.91,84.8,108,81.9
+Microwave-Assisted,Butanol,50,4,196,3.92,85.0,108,81.9
+Microwave-Assisted,Ethanol,50,4,196,3.94,85.1,109,82.0
+Microwave-Assisted,Propanol,50,4,196,3.95,85.2,109,82.0
+Microwave-Assisted,Butanol,50,4,196,3.96,85.3,110,82.1
+Microwave-Assisted,Butanol,50,4,196,3.97,85.4,110,82.1
+Microwave-Assisted,Butanol,50,4,196,3.98,85.6,111,82.2
+Microwave-Assisted,Butanol,50,4,196,3.99,85.7,111,82.3
+Microwave-Assisted,Isopropanol,50,4,196,4.00,85.8,112,82.3
+Microwave-Assisted,Isopropanol,50,4,197,4.01,85.9,112,82.4
+Microwave-Assisted,Isopropanol,50,4,197,4.02,86.0,113,82.4
+Microwave-Assisted,Isopropanol,50,4,197,4.03,86.2,113,82.5
+Microwave-Assisted,Isopropanol,50,4,197,4.04,86.3,114,82.5
+Microwave-Assisted,Isopropanol,50,4,197,4.05,86.4,114,82.6
+Microwave-Assisted,Isopropanol,50,4,197,4.06,86.5,115,82.6
+Microwave-Assisted,Isopropanol,50,4,197,4.07,86.6,115,82.7
+Microwave-Assisted,Isopropanol,50,4,197,4.09,86.8,116,82.7
+Microwave-Assisted,Isopropanol,50,4,197,4.10,86.9,116,82.8
+Microwave-Assisted,Isopropanol,50,4,197,4.11,87.0,117,82.8
+Microwave-Assisted,Isopropanol,50,4,197,4.12,87.1,117,82.9
+Microwave-Assisted,Isopropanol,50,4,197,4.13,87.3,118,82.9
+Microwave-Assisted,Isopropanol,50,4,197,4.14,87.4,118,83.0
+Microwave-Assisted,Isopropanol,50,4,197,4.15,87.5,119,83.0
+Microwave-Assisted,Isopropanol,50,4,197,4.16,87.6,119,83.1
+Microwave-Assisted,Isopropanol,50,4,197,4.17,87.7,120,83.2
+Microwave-Assisted,Isopropanol,50,4,198,4.18,87.9,120,83.2
+Microwave-Assisted,Isopropanol,50,4,198,4.19,88.0,121,83.3
+Microwave-Assisted,Isopropanol,50,4,198,4.20,88.1,121,83.3
+Microwave-Assisted,Isopropanol,50,4,198,4.21,88.2,122,83.4
+Microwave-Assisted,Isopropanol,50,4,198,4.22,88.3,122,83.4
+Microwave-Assisted,Isopropanol,50,4,198,4.24,88.5,123,83.5
+Microwave-Assisted,Isopropanol,50,4,198,4.25,88.6,123,83.5
+Microwave-Assisted,Ethylene Glycol,50,4,198,4.26,88.7,124,83.6
+Microwave-Assisted,Ethylene Glycol,50,4,198,4.27,88.8,124,83.6
+Microwave-Assisted,Ethylene Glycol,50,4,198,4.28,88.9,125,83.7
+Microwave-Assisted,Ethylene Glycol,50,4,198,4.29,89.1,125,83.7
+Microwave-Assisted,Ethylene Glycol,50,4,198,4.30,89.2,126,83.8
+Microwave-Assisted,Ethylene Glycol,50,4,198,4.31,89.3,126,83.8
+Microwave-Assisted,Ethylene Glycol,50,4,198,4.32,89.4,127,83.9
+Microwave-Assisted,Ethylene Glycol,50,4,198,4.33,89.6,127,83.9
+Microwave-Assisted,Ethylene Glycol,50,4,198,4.34,89.7,128,84.0
+Microwave-Assisted,Ethylene Glycol,50,4,199,4.35,89.8,128,84.1
+Microwave-Assisted,Ethylene Glycol,50,4,199,4.36,89.9,129,84.1
+Microwave-Assisted,Ethylene Glycol,50,4,199,4.38,90.0,129,84.2
+Microwave-Assisted,Ethylene Glycol,50,4,199,4.39,90.2,130,84.2
+Microwave-Assisted,Ethylene Glycol,50,4,199,4.40,90.3,130,84.3
+Microwave-Assisted,Ethylene Glycol,50,4,199,4.41,90.4,131,84.3
+Microwave-Assisted,Ethylene Glycol,50,4,199,4.42,90.5,131,84.4
+Microwave-Assisted,Ethylene Glycol,50,4,199,4.43,90.6,132,84.4
+Microwave-Assisted,Ethylene Glycol,50,4,199,4.44,90.8,132,84.5
+Microwave-Assisted,Ethylene Glycol,50,4,199,4.45,90.9,133,84.5
+Microwave-Assisted,Ethylene Glycol,50,4,199,4.46,91.0,133,84.6
+Microwave-Assisted,Ethylene Glycol,50,4,199,4.47,91.1,134,84.6
+Microwave-Assisted,Ethylene Glycol,50,4,199,4.48,91.2,134,84.7
+Microwave-Assisted,Ethylene Glycol,50,4,199,4.49,91.4,135,84.7
+Microwave-Assisted,Ethylene Glycol,50,4,199,4.50,91.5,135,84.8
+Microwave-Assisted,Ethylene Glycol,50,4,199,4.51,91.6,136,84.8
+Microwave-Assisted,Ethylene Glycol,50,4,200,4.53,91.7,136,84.9
+Microwave-Assisted,Ethylene Glycol,60,4,200,4.54,91.8,137,85.0
+Microwave-Assisted,Ethylene Glycol,60,4,200,4.55,92.0,137,85.0
+Microwave-Assisted,Ethylene Glycol,60,4,200,4.56,92.1,138,85.1
+Microwave-Assisted,Ethylene Glycol,60,4,200,4.57,92.2,138,85.1
+Microwave-Assisted,Ethylene Glycol,60,4,200,4.58,92.3,139,85.2
+Microwave-Assisted,Ethylene Glycol,60,4,200,4.59,92.5,139,85.2
+Microwave-Assisted,Ethylene Glycol,60,4,200,4.60,92.6,140,85.3
+Microwave-Assisted,Ethylene Glycol,60,4,200,4.61,92.7,140,85.3
+Microwave-Assisted,Ethylene Glycol,60,4,200,4.62,92.8,141,85.4
+Microwave-Assisted,Ethylene Glycol,60,4,200,4.63,92.9,141,85.4
+Microwave-Assisted,Ethylene Glycol,60,4,200,4.64,93.1,142,85.5
+Microwave-Assisted,Ethylene Glycol,60,4,200,4.65,93.2,142,85.5
+Microwave-Assisted,Ethylene Glycol,60,6,200,4.66,93.3,143,85.6
+Microwave-Assisted,Ethylene Glycol,60,6,200,4.68,93.4,143,85.6
+Microwave-Assisted,Ethylene Glycol,60,6,201,4.69,93.5,144,85.7
+Microwave-Assisted,Ethylene Glycol,60,6,201,4.70,93.7,144,85.7
+Microwave-Assisted,Ethylene Glycol,60,6,201,4.71,93.8,145,85.8
+Microwave-Assisted,Ethylene Glycol,60,6,201,4.72,93.9,145,85.9
+Microwave-Assisted,Ethylene Glycol,60,6,201,4.73,94.0,146,85.9
+Microwave-Assisted,Ethylene Glycol,60,6,201,4.74,94.1,146,86.0
+Microwave-Assisted,Ethylene Glycol,60,6,201,4.75,94.3,147,86.0
+Microwave-Assisted,Ethylene Glycol,60,6,201,4.76,94.4,147,86.1
+Microwave-Assisted,Ethylene Glycol,60,6,201,4.77,94.5,148,86.1
+Microwave-Assisted,Ethylene Glycol,60,6,201,4.78,94.6,148,86.2
+Microwave-Assisted,Ethylene Glycol,60,6,201,4.79,94.8,149,86.2
+Microwave-Assisted,Ethylene Glycol,60,6,201,4.80,94.9,149,86.3
+Microwave-Assisted,Ethylene Glycol,60,6,201,4.81,95.0,150,86.3
+Microwave-Assisted,Ethylene Glycol,60,6,201,4.83,95.1,150,86.4
+Microwave-Assisted,Ethylene Glycol,60,6,201,4.84,95.2,151,86.4
+Microwave-Assisted,Ethylene Glycol,60,6,201,4.85,95.4,151,86.5
+Microwave-Assisted,Ethylene Glycol,60,6,202,4.86,95.5,152,86.5
+Microwave-Assisted,Ethylene Glycol,60,6,202,4.87,95.6,152,86.6
+Microwave-Assisted,Ethylene Glycol,60,6,202,4.88,95.7,153,86.6
+Microwave-Assisted,Ethylene Glycol,60,6,202,4.89,95.8,153,86.7
+Microwave-Assisted,Ethylene Glycol,60,6,202,4.90,96.0,154,86.8
+Microwave-Assisted,Ethylene Glycol,60,6,202,4.91,96.1,154,86.8
+Microwave-Assisted,Ethylene Glycol,60,6,202,4.92,96.2,155,86.9
+Microwave-Assisted,Ethylene Glycol,60,6,202,4.93,96.3,155,86.9
+Microwave-Assisted,Ethylene Glycol,60,6,202,4.94,96.4,156,87.0
+Microwave-Assisted,Ethylene Glycol,60,6,202,4.95,96.6,156,87.0
+Microwave-Assisted,Ethylene Glycol,60,6,202,4.97,96.7,157,87.1
+Microwave-Assisted,Ethylene Glycol,60,6,202,4.98,96.8,157,87.1
+Microwave-Assisted,Ethylene Glycol,60,6,202,4.99,96.9,158,87.2
+Microwave-Assisted,Ethylene Glycol,60,6,202,5.00,97.1,158,87.2
+Microwave-Assisted,Ethylene Glycol,60,6,202,5.01,97.2,159,87.3
+Microwave-Assisted,Ethylene Glycol,60,6,202,5.02,97.3,159,87.3
+Microwave-Assisted,Ethylene Glycol,60,6,203,5.03,97.4,160,87.4
+Microwave-Assisted,Ethylene Glycol,60,6,203,5.04,97.5,160,87.4
+Microwave-Assisted,Ethylene Glycol,60,6,203,5.05,97.7,161,87.5
+Microwave-Assisted,Ethylene Glycol,60,6,203,5.06,97.8,161,87.6
+Microwave-Assisted,Ethylene Glycol,60,6,203,5.07,97.9,162,87.6
+Microwave-Assisted,Ethylene Glycol,60,6,203,5.08,98.0,162,87.7
+Microwave-Assisted,Ethylene Glycol,60,6,203,5.09,98.1,163,87.7
+Microwave-Assisted,Ethylene Glycol,60,6,203,5.10,98.3,163,87.8
+Microwave-Assisted,Ethylene Glycol,60,6,203,5.12,98.4,164,87.8
+Microwave-Assisted,Ethylene Glycol,60,6,203,5.13,98.5,164,87.9
+Microwave-Assisted,Ethylene Glycol,60,6,203,5.14,98.6,165,87.9
+Microwave-Assisted,Ethylene Glycol,60,6,203,5.15,98.7,165,88.0
+Microwave-Assisted,Ethylene Glycol,60,6,203,5.16,98.9,166,88.0
+Microwave-Assisted,Ethylene Glycol,60,6,203,5.17,99.0,166,88.1
+Microwave-Assisted,Ethylene Glycol,60,6,203,5.18,99.1,167,88.1
+Microwave-Assisted,Ethylene Glycol,60,6,203,5.19,99.2,167,88.2
+Microwave-Assisted,Ethylene Glycol,60,6,204,5.20,99.4,168,88.2
+Microwave-Assisted,Ethylene Glycol,60,6,204,5.21,99.5,168,88.3
+Ultrasonication,Ethylene Glycol,60,6,204,5.22,99.6,169,88.3
+Ultrasonication,Ethylene Glycol,60,6,204,5.23,99.7,169,88.4
+Ultrasonication,Ethylene Glycol,60,6,204,5.24,99.8,170,88.5
+Ultrasonication,Ethylene Glycol,60,6,204,5.25,100.0,170,88.5
+Ultrasonication,Ethylene Glycol,60,6,204,5.27,100.1,171,88.6
+Ultrasonication,Ethylene Glycol,60,6,204,5.28,100.2,171,88.6
+Ultrasonication,Ethylene Glycol,60,6,204,5.29,100.3,172,88.7
+Ultrasonication,Ethylene Glycol,60,6,204,5.30,100.4,172,88.7
+Ultrasonication,Ethylene Glycol,60,6,204,5.31,100.6,173,88.8
+Ultrasonication,Ethylene Glycol,60,6,204,5.32,100.7,173,88.8
+Ultrasonication,Ethylene Glycol,60,6,204,5.33,100.8,174,88.9
+Ultrasonication,Ethylene Glycol,60,6,204,5.34,100.9,174,88.9
+Ultrasonication,Ethylene Glycol,60,6,204,5.35,101.0,175,89.0
+Ultrasonication,Ethylene Glycol,60,6,204,5.36,101.2,175,89.0
+Ultrasonication,Ethylene Glycol,60,6,205,5.37,101.3,176,89.1
+Ultrasonication,Ethylene Glycol,60,6,205,5.38,101.4,176,89.1
+Ultrasonication,Ethylene Glycol,60,6,205,5.39,101.5,177,89.2
+Ultrasonication,Ethylene Glycol,70,6,205,5.40,101.7,177,89.2
+Ultrasonication,Ethylene Glycol,70,6,205,5.42,101.8,178,89.3
+Ultrasonication,Ethylene Glycol,70,6,205,5.43,101.9,178,89.4
+Ultrasonication,Ethylene Glycol,70,6,205,5.44,102.0,179,89.4
+Ultrasonication,Ethylene Glycol,70,6,205,5.45,102.1,179,89.5
+Ultrasonication,Ethylene Glycol,70,6,205,5.46,102.3,180,89.5
+Ultrasonication,Ethylene Glycol,70,6,205,5.47,102.4,180,89.6
+Ultrasonication,Ethylene Glycol,70,6,205,5.48,102.5,181,89.6
+Ultrasonication,Ethylene Glycol,70,6,205,5.49,102.6,181,89.7
+Ultrasonication,Ethylene Glycol,70,6,205,5.50,102.7,182,89.7
+Ultrasonication,Ethylene Glycol,70,6,205,5.51,102.9,182,89.8
+Ultrasonication,Ethylene Glycol,70,6,205,5.52,103.0,183,89.8
+Ultrasonication,Ethylene Glycol,70,6,205,5.53,103.1,183,89.9
+Ultrasonication,Propylene Glycol,70,6,206,5.54,103.2,184,89.9
+Ultrasonication,Propylene Glycol,70,6,206,5.56,103.3,184,90.0
+Ultrasonication,Propylene Glycol,70,6,206,5.57,103.5,185,90.0
+Ultrasonication,Propylene Glycol,70,6,206,5.58,103.6,185,90.1
+Ultrasonication,Propylene Glycol,70,6,206,5.59,103.7,186,90.1
+Ultrasonication,Propylene Glycol,70,6,206,5.60,103.8,186,90.2
+Ultrasonication,Propylene Glycol,70,6,206,5.61,103.9,187,90.3
+Ultrasonication,Propylene Glycol,70,6,206,5.62,104.1,187,90.3
+Ultrasonication,Propylene Glycol,70,6,206,5.63,104.2,188,90.4
+Ultrasonication,Propylene Glycol,70,6,206,5.64,104.3,188,90.4
+Ultrasonication,Propylene Glycol,70,6,206,5.65,104.4,189,90.5
+Ultrasonication,Propylene Glycol,70,6,206,5.66,104.6,189,90.5
+Ultrasonication,Propylene Glycol,70,6,206,5.67,104.7,190,90.6
+Ultrasonication,Propylene Glycol,70,6,206,5.68,104.8,190,90.6
+Ultrasonication,Propylene Glycol,70,6,206,5.69,104.9,191,90.7
+Ultrasonication,Propylene Glycol,70,6,206,5.71,105.0,191,90.7
+Ultrasonication,Propylene Glycol,70,6,207,5.72,105.2,192,90.8
+Ultrasonication,Propylene Glycol,70,6,207,5.73,105.3,192,90.8
+Ultrasonication,Propylene Glycol,70,6,207,5.74,105.4,193,90.9
+Ultrasonication,Propylene Glycol,70,6,207,5.75,105.5,193,90.9
+Ultrasonication,Propylene Glycol,70,6,207,5.76,105.6,194,91.0
+Ultrasonication,Propylene Glycol,70,6,207,5.77,105.8,194,91.0
+Ultrasonication,Propylene Glycol,70,6,207,5.78,105.9,195,91.1
+Ultrasonication,Propylene Glycol,70,6,207,5.79,106.0,195,91.2
+Ultrasonication,Propylene Glycol,70,6,207,5.80,106.1,196,91.2
+Ultrasonication,Propylene Glycol,70,6,207,5.81,106.2,196,91.3
+Ultrasonication,Propylene Glycol,70,6,207,5.82,106.4,197,91.3
+Ultrasonication,Propylene Glycol,70,6,207,5.83,106.5,197,91.4
+Ultrasonication,Propylene Glycol,70,6,207,5.84,106.6,198,91.4
+Ultrasonication,Propylene Glycol,70,6,207,5.86,106.7,198,91.5
+Ultrasonication,Propylene Glycol,70,6,207,5.87,106.9,199,91.5
+Ultrasonication,Propylene Glycol,70,6,207,5.88,107.0,199,91.6
+Ultrasonication,Propylene Glycol,70,6,208,5.89,107.1,200,91.6
+Ultrasonication,Propylene Glycol,70,6,208,5.90,107.2,200,91.7
+Ultrasonication,Propylene Glycol,70,6,208,5.91,107.3,201,91.7
+Ultrasonication,Propylene Glycol,70,6,208,5.92,107.5,201,91.8
+Ultrasonication,Propylene Glycol,70,6,208,5.93,107.6,202,91.8
+Ultrasonication,Propylene Glycol,70,6,208,5.94,107.7,202,91.9
+Ultrasonication,Propylene Glycol,70,6,208,5.95,107.8,203,91.9
+Ultrasonication,Propylene Glycol,70,6,208,5.96,107.9,203,92.0
+Ultrasonication,Propylene Glycol,70,6,208,5.97,108.1,204,92.1
+Ultrasonication,Propylene Glycol,70,6,208,5.98,108.2,204,92.1
+Ultrasonication,Propylene Glycol,70,6,208,5.99,108.3,205,92.2
+Ultrasonication,Propylene Glycol,70,6,208,6.01,108.4,205,92.2
+Ultrasonication,Propylene Glycol,70,6,208,6.02,108.5,206,92.3
+Ultrasonication,Propylene Glycol,70,6,208,6.03,108.7,206,92.3
+Ultrasonication,Propylene Glycol,70,6,208,6.04,108.8,207,92.4
+Ultrasonication,Propylene Glycol,70,6,208,6.05,108.9,207,92.4
+Ultrasonication,Propylene Glycol,70,6,209,6.06,109.0,208,92.5
+Ultrasonication,Propylene Glycol,70,8,209,6.07,109.2,208,92.5
+Ultrasonication,Propylene Glycol,70,8,209,6.08,109.3,209,92.6
+Ultrasonication,Propylene Glycol,70,8,209,6.09,109.4,209,92.6
+Ultrasonication,Propylene Glycol,70,8,209,6.10,109.5,210,92.7
+Ultrasonication,Propylene Glycol,70,8,209,6.11,109.6,210,92.7
+Ultrasonication,Propylene Glycol,70,8,209,6.12,109.8,211,92.8
+Ultrasonication,Propylene Glycol,70,8,209,6.13,109.9,211,92.9
+Ultrasonication,Propylene Glycol,70,8,209,6.15,110.0,212,92.9
+Ultrasonication,Propylene Glycol,70,8,209,6.16,110.1,212,93.0
+Ultrasonication,Propylene Glycol,70,8,209,6.17,110.2,213,93.0
+Ultrasonication,Propylene Glycol,70,8,209,6.18,110.4,213,93.1
+Ultrasonication,Propylene Glycol,70,8,209,6.19,110.5,214,93.1
+Ultrasonication,Propylene Glycol,70,8,209,6.20,110.6,214,93.2
+Ultrasonication,Propylene Glycol,70,8,209,6.21,110.7,215,93.2
+Ultrasonication,Propylene Glycol,70,8,209,6.22,110.8,215,93.3
+Ultrasonication,Propylene Glycol,70,8,210,6.23,111.0,216,93.3
+Ultrasonication,Propylene Glycol,70,8,210,6.24,111.1,216,93.4
+Ultrasonication,Propylene Glycol,70,8,210,6.25,111.2,217,93.4
+Ultrasonication,Propylene Glycol,70,8,210,6.26,111.3,217,93.5
+Ultrasonication,Propylene Glycol,70,8,210,6.27,111.5,218,93.5
+Ultrasonication,Propylene Glycol,70,8,210,6.28,111.6,218,93.6
+Ultrasonication,Propylene Glycol,70,8,210,6.30,111.7,219,93.6
+Ultrasonication,Propylene Glycol,70,8,210,6.31,111.8,219,93.7
+Ultrasonication,Propylene Glycol,80,8,210,6.32,111.9,220,93.8
+Ultrasonication,Propylene Glycol,80,8,210,6.33,112.1,220,93.8
+Ultrasonication,Propylene Glycol,80,8,210,6.34,112.2,221,93.9
+Ultrasonication,Propylene Glycol,80,8,210,6.35,112.3,221,93.9
+Ultrasonication,Propylene Glycol,80,8,210,6.36,112.4,222,94.0
+Ultrasonication,Propylene Glycol,80,8,210,6.37,112.5,222,94.0
+Ultrasonication,Propylene Glycol,80,8,210,6.38,112.7,223,94.1
+Ultrasonication,Propylene Glycol,80,8,210,6.39,112.8,223,94.1
+Ultrasonication,Propylene Glycol,80,8,211,6.40,112.9,224,94.2
+Ultrasonication,Propylene Glycol,80,8,211,6.41,113.0,224,94.2
+Ultrasonication,Propylene Glycol,80,8,211,6.42,113.1,225,94.3
+Ultrasonication,Propylene Glycol,80,8,211,6.43,113.3,225,94.3
+Ultrasonication,Propylene Glycol,80,8,211,6.45,113.4,226,94.4
+Ultrasonication,Propylene Glycol,80,8,211,6.46,113.5,226,94.4
+Ultrasonication,Propylene Glycol,80,8,211,6.47,113.6,227,94.5
+Ultrasonication,Propylene Glycol,80,8,211,6.48,113.8,227,94.5
+Ultrasonication,Glycerol,80,8,211,6.49,113.9,228,94.6
+Ultrasonication,Glycerol,80,8,211,6.50,114.0,228,94.7
+Ultrasonication,Glycerol,80,8,211,6.51,114.1,229,94.7
+Ultrasonication,Glycerol,80,8,211,6.52,114.2,229,94.8
+Ultrasonication,Glycerol,80,8,211,6.53,114.4,230,94.8
+Ultrasonication,Glycerol,80,8,211,6.54,114.5,230,94.9
+Ultrasonication,Glycerol,80,8,211,6.55,114.6,231,94.9
+Ultrasonication,Glycerol,80,8,212,6.56,114.7,231,95.0
+Ultrasonication,Glycerol,80,8,212,6.57,114.8,232,95.0
+Ultrasonication,Glycerol,80,8,212,6.58,115.0,232,95.1
+Ultrasonication,Glycerol,80,8,212,6.60,115.1,233,95.1
+Ultrasonication,Glycerol,80,8,212,6.61,115.2,233,95.2
+Ultrasonication,Glycerol,80,8,212,6.62,115.3,234,95.2
+Ultrasonication,Glycerol,80,8,212,6.63,115.4,234,95.3
+Ultrasonication,Glycerol,80,8,212,6.64,115.6,235,95.3
+Ultrasonication,Glycerol,80,8,212,6.65,115.7,235,95.4
+Ultrasonication,Glycerol,80,8,212,6.66,115.8,236,95.4
+Ultrasonication,Glycerol,80,8,212,6.67,115.9,236,95.5
+Ultrasonication,Glycerol,80,8,212,6.68,116.0,237,95.6
+Ultrasonication,Glycerol,80,8,212,6.69,116.2,237,95.6
+Ultrasonication,Glycerol,80,8,212,6.70,116.3,238,95.7
+Ultrasonication,Glycerol,80,8,212,6.71,116.4,238,95.7
+Ultrasonication,Glycerol,80,8,212,6.72,116.5,239,95.8
+Ultrasonication,Glycerol,80,8,213,6.74,116.7,239,95.8
+Ultrasonication,Glycerol,80,8,213,6.75,116.8,240,95.9
+Ultrasonication,Glycerol,80,8,213,6.76,116.9,240,95.9
+Ultrasonication,Glycerol,80,8,213,6.77,117.0,241,96.0
+Ultrasonication,Glycerol,80,8,213,6.78,117.1,241,96.0
+Ultrasonication,Glycerol,80,8,213,6.79,117.3,242,96.1
+Ultrasonication,Glycerol,80,8,213,6.80,117.4,242,96.1
+Ultrasonication,Glycerol,80,8,213,6.81,117.5,243,96.2
+Ultrasonication,Glycerol,80,8,213,6.82,117.6,243,96.2
+Ultrasonication,Glycerol,80,8,213,6.83,117.7,244,96.3
+Ultrasonication,Glycerol,80,8,213,6.84,117.9,244,96.3
+Ultrasonication,Glycerol,80,8,213,6.85,118.0,245,96.4
+Ultrasonication,Glycerol,80,8,213,6.86,118.1,245,96.5
+Ultrasonication,Glycerol,80,8,213,6.87,118.2,246,96.5
+Ultrasonication,Glycerol,80,8,213,6.89,118.3,246,96.6
+Ultrasonication,Glycerol,80,10,213,6.90,118.5,247,96.6
+Ultrasonication,Glycerol,80,10,214,6.91,118.6,247,96.7
+Ultrasonication,Glycerol,80,10,214,6.92,118.7,248,96.7
+Ultrasonication,Glycerol,80,10,214,6.93,118.8,248,96.8
+Ultrasonication,Glycerol,80,10,214,6.94,119.0,249,96.8
+Ultrasonication,Glycerol,80,10,214,6.95,119.1,249,96.9
+Ultrasonication,Glycerol,80,10,214,6.96,119.2,250,96.9
+Ultrasonication,Glycerol,80,10,214,6.97,119.3,250,97.0
+Ultrasonication,Glycerol,80,10,214,6.98,119.4,251,97.0
+Ultrasonication,Glycerol,80,10,214,6.99,119.6,251,97.1
+Ultrasonication,Glycerol,80,10,214,7.00,119.7,252,97.1
+Ultrasonication,Glycerol,80,10,214,7.01,119.8,252,97.2
+Ultrasonication,Glycerol,80,10,214,7.02,119.9,253,97.2
+Ultrasonication,Glycerol,80,10,214,7.04,120.0,253,97.3
+Ultrasonication,Glycerol,80,10,214,7.05,120.2,254,97.4
+Ultrasonication,Glycerol,80,10,214,7.06,120.3,254,97.4
+Ultrasonication,Glycerol,80,10,214,7.07,120.4,255,97.5

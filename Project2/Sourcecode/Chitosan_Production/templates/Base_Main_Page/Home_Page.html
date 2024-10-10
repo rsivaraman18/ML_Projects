@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+ {% load static %}
+<html lang="en">
+<head>
+<title>Chitosan Production</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="Carting Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+	<style>
+		.active{
+			background:brown;
+			border-radius:7px;
+			color:red;
+			padding:1px 2px;
+		}
+	</style>
+
+	<!-- css files -->
+
+    <link href="{% static 'Base_Main_Page/css/bootstrap.css' %}" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <link href="{% static 'Base_Main_Page/css/style.css' %}" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="{% static 'Base_Main_Page/css/font-awesome.min.css' %}" rel="stylesheet"><!-- fontawesome css -->
+
+	<!-- //css files -->
+
+	<!-- google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+	<!-- //google fonts -->
+
+</head>
+<body>
+<script>
+	{% for msg in messages %}
+	alert('{{msg}}');
+	{% endfor %}
+</script>
+
+<header>
+	<div class="container">
+		<!-- nav -->
+		<nav class="py-md-4 py-3 d-lg-flex">
+			<div id="logo">
+				<h1> <a href="/">Chitosan Production</a></h1>
+			</div>
+			<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+			<input type="checkbox" id="drop" />
+			<ul class="menu mt-3 ml-auto">
+				<li class="active"><a href="/">Home</a></li>
+				<li class=""><a href="/deproteinization/deprotein_login/">Deproteinzation</a></li>
+				<li class=""><a href="/mineral_separation/mineral_login/">Mineral Separation</a></li>
+				<li class=""><a href="/deacetylation/deacetyl_login/">Deacetylation</a></li>
+				<li class=""><a href="/chitosan_synthesis/chitosan_login/">Chitosan</a></li>
+				<li class=""><a href="/manager/manager_login/">Manager</a></li>
+			</ul>
+		</nav>
+		<!-- //nav -->
+	</div>
+</header>
+<!-- //header -->
+
+<!-- banner -->
+<!-- Banner Section -->
+<section class="banner w3pvt-banner" id="home">
+    <div class="container">
+        <div class="banner-text">
+            <div class="banner-info text-center">
+                <div class="w3pvt-logo">
+                    <h3 class="text-uppercase">Revolutionizing Chitosan Synthesis</h3>
+                    <p class="mt-3">Unlock the full potential of chitosan with our cutting-edge synthesis techniques. Reduce waste and enhance efficiency with our innovative solutions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- //banner -->
+<!-- services --><!-- Services Section -->
+<section class="services py-5" id="services">
+    <div class="container py-lg-5 py-3">
+        <div class="wthree_pvt_title text-center">
+            <h4 class="w3pvt-title">Our Services</h4>
+            <p class="sub-title">Explore our diverse range of shipping solutions designed to meet your needs efficiently and reliably.</p>
+        </div>
+        <div class="row service-grid-grids text-center">
+            <div class="col-lg-4 col-md-6 service-grid service-grid1">
+                <div class="service-icon">
+                    <span class="fa fa-ship"></span>
+                </div>
+                <h4 class="mt-3">Sea Freight</h4>
+                <p class="mt-3">Comprehensive sea freight solutions ensuring safe and timely delivery of goods across the globe.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 service-grid service-grid2 mt-md-0 mt-5">
+                <div class="service-icon">
+                    <span class="fa fa-truck"></span>
+                </div>
+                <h4 class="mt-3">Truck Transport</h4>
+                <p class="mt-3">Reliable truck transport services providing flexible and efficient road shipping solutions.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 service-grid service-grid3 mt-lg-0 mt-5">
+                <div class="service-icon">
+                    <span class="fa fa-plane"></span>
+                </div>
+                <h4 class="mt-3">Air Freight</h4>
+                <p class="mt-3">Fast and secure air freight options to ensure quick delivery of your time-sensitive shipments.</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6 p-md-0">
+                <div class="bg-image-left">
+                    <h4>Ocean Freight</h4>
+                </div>
+            </div>
+            <div class="col-md-6 p-md-0">
+                <div class="bg-image-right">
+                    <h4>Air Freight</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 pr-md-0">
+                        <div class="bg-image-bottom1">
+                            <h4>Truck Transport</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pl-md-0">
+                        <div class="bg-image-bottom2">
+                            <h4>Sea Freight</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- //services -->
+
+
+<!-- Blog Section -->
+<section class="blog py-5">
+    <div class="container py-sm-4">
+        <div class="wthree_pvt_title text-center">
+            <h4 class="w3pvt-title">Our Blog</h4>
+            <p class="sub-title">Explore our insights on chitosan benefits and waste reduction strategies.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mt-lg-0 col-md-6">
+
+				<img src="{% static 'images/img35.jpg' %}" class="img-fluid" alt="Chitosan Benefits" />
+
+                <div class="blog-info">
+                    <h4 class="mb-3">Benefits of Chitosan</h4>
+                    <p>Chitosan, a versatile biopolymer, offers numerous advantages such as waste reduction and improved environmental sustainability. Learn how this natural material contributes to greener solutions.</p>
+
+                </div>
+            </div>
+            <div class="col-lg-4 mt-md-0 mt-4 col-md-6">
+                <img src="{% static 'images/img34.jpg' %}" class="img-fluid" alt="Chitosan Benefits" />
+                <div class="blog-info">
+                    <h4 class="mb-3">Strategies for Waste Reduction</h4>
+                    <p>Explore effective strategies for reducing waste through innovative methods and materials, including the use of chitosan. Discover practical tips and success stories in waste management.</p>
+
+                </div>
+            </div>
+            <div class="col-lg-4 mt-lg-0 mt-4 col-md-6">
+                <img src="{% static 'images/img33.jpg' %}" class="img-fluid" alt="Chitosan Benefits" />
+                <div class="blog-info">
+                    <h4 class="mb-3">Eco-Friendly Practices</h4>
+                    <p>Discover how integrating chitosan into various processes can lead to more eco-friendly practices, reducing environmental impact and promoting sustainability.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- //blog -->
+
+
+
+
+</body>
+</html>

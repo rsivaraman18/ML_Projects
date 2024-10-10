@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+    <title>{%block title %}Deacetylation Home Page{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Voyaging a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+
+<link href="{% static '03_Deacetylation/Home/css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static '03_Deacetylation/Home/css/style.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static '03_Deacetylation/Home/css/fontawesome-all.css' %}" rel="stylesheet">
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+</head>
+
+<body>
+<script>
+	{% for msg in messages %}
+	alert('{{msg}}');
+	{% endfor %}
+</script>
+    <!-- mian-content -->
+    <section class="mian-content">
+	<!-- header -->
+    <header>	
+	<nav class="mnu navbar-light">
+            <div class="logo" id="logo">
+                <h1><a href="/deacetylation/deacetyl_home/">Deacetylation</a></h1>
+            </div>
+				<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+                <input type="checkbox" id="drop">
+                    <ul class="menu">
+                        <li class="mr-lg-4 mr-3 "><a href="/deacetylation/deacetyl_home/">Home</a></li>
+						<li class="mr-lg-4 mr-3 {% block mineral_report_active %}{% endblock %}"><a href="/deacetylation/deacetylation_mineral_report_page/">View</a></li>
+						<li class="mr-lg-4 mr-3 {% block dataset_upload %}{% endblock %}"><a href="/deacetylation/deacetylation_dataset_upload/">Upload</a></li>
+						<li class="mr-lg-4 mr-3 {% block deacetyl_process %}{% endblock %}"><a href="/deacetylation/deacetyl_process_page/">Process</a></li>
+						<li class="mr-lg-4 mr-3 {% block deacetyl_calculate %}{% endblock %}"><a href="/deacetylation/deacetyl_calculation_page/">Calculate</a></li>
+						<li class="mr-lg-4 mr-3 {% block deacetyl_report_page %}{% endblock %}"><a href="/deacetylation/deacetyl_report_page/">Report</a></li>
+                        <li><a href="/deacetylation/deacetyl_logout/">Logout</a></li>
+<!--						<li class="mr-lg-4 mr-3">-->
+<!--                            &lt;!&ndash; First Tier Drop Down &ndash;&gt;-->
+<!--                            <label for="drop-2" class="toggle">Drop Down <span class="fa fa-angle-down" aria-hidden="true"></span> </label>-->
+<!--                            <a href="#">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span></a>-->
+<!--                            <input type="checkbox" id="drop-2" />-->
+<!--                            <ul>-->
+<!--                              <li><a href="services.html">Services</a>-->
+<!--                                </li>-->
+<!--                                <li><a href="gallery.html">Gallery</a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+
+
+                    </ul>
+    </nav>
+</header>
+<!-- //header -->
+        {% block content %}
+<!-- /header-top-->
+            <div class="header-top">
+				<!-- /banner-info-->
+                <div class="banner-content text-center text-white">
+    <h4 class="text-uppercase">Enhance Your Experience</h4>
+    <h3>Discover Your Perfect Getaway</h3>
+
+    <div class="banner-high-lights text-center">
+        <div class="ban-text text-center py-3">
+            <p class="text-uppercase pb-2 text-white">Enhance Your Experience</p>
+            <h5 class="ban-text">
+                Discover Your Perfect Getaway
+            </h5>
+        </div>
+    </div>
+</div>
+
+                <!-- //banner-info-->
+            </div>
+        <!-- //header-top-->
+    </section>
+    <!-- //mian-content-->
+	 <!-- /advantage -->
+    <section class="banner-bottom py-lg-5 py-md-5 py-3" id="services">
+    <div class="container">
+        <div class="inner-sec py-lg-5 py-3">
+            <h2 class="tittle text-center mb-md-5 mb-4">Our Services</h2>
+            <div class="row middle-grids pt-lg-5">
+                <div class="col-lg-6 advantage-grid-info pt-md-5">
+                    <div class="advantage_left">
+                        <h4 class="mb-2">Advanced Chitosan Extraction</h4>
+                        <h3>High-Purity Results</h3>
+                        <p class="mt-2">Our advanced extraction methods ensure high-purity chitosan, utilizing cutting-edge technology to maximize efficiency and yield. Our techniques are designed to meet the highest standards of quality and consistency.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 advantage-grid-info1">
+                    <div class="advantage_left1 text-center">
+                       <img src="{% static '03_Deacetylation/Home/images/pic1.jpg' %}" class="img-fluid" alt="Quality Control">
+                    </div>
+                </div>
+            </div>
+            <div class="row middle-grids pt-lg-5">
+                <div class="col-lg-6 advantage-grid-info1">
+                    <div class="advantage_left1 text-center">
+                        <img src="{% static '03_Deacetylation/Home/images/pic2.jpg' %}" class="img-fluid" alt="Quality Control">
+                    </div>
+                </div>
+                <div class="col-lg-6 advantage-grid-info pt-md-5">
+                    <div class="advantage_left">
+                        <h4 class="mb-2">Comprehensive Purification</h4>
+                        <h3>Ensuring Superior Quality</h3>
+                        <p class="mt-2">Our purification process removes impurities effectively, resulting in chitosan that meets the highest quality standards. We focus on precision and reliability, ensuring that our products are suitable for diverse applications.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row middle-grids pt-lg-5">
+                <div class="col-lg-6 advantage-grid-info pt-md-5">
+                    <div class="advantage_left">
+                        <h4 class="mb-2">Quality Control & Testing</h4>
+                        <h3>Guaranteed Performance</h3>
+                        <p class="mt-2">We perform rigorous quality control and testing to ensure every batch of chitosan adheres to strict performance criteria. Our commitment to quality ensures that our products deliver consistent and reliable results.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 advantage-grid-info1">
+                    <div class="advantage_left1 text-center">
+                        <img src="{% static '03_Deacetylation/Home/images/pic3.jpg' %}" class="img-fluid" alt="Quality Control">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- //advantage -->
+	 <!--/testimonials-->
+<section class="clients py-md-5 py-3" id="clients">
+    <div class="container">
+        <div class="inner-sec py-md-5 py-3">
+            <h3 class="tittle text-center mb-md-5 mb-4">Client Feedback</h3>
+            <div class="row">
+                <div class="col-md-6 item">
+                    <div class="feedback-info text-left">
+                        <div class="feedback-top">
+                            <p>“Our partnership with wide has greatly enhanced our chitosan synthesis process. Their advanced deproteinization techniques and reliable purification methods have significantly improved our product quality.”</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 item">
+                    <div class="feedback-info text-left">
+                        <div class="feedback-top">
+                            <p>Our expertise in chitosan extraction and purification has been instrumental in our research. Their commitment to quality and innovation is evident in every aspect of their work.”</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--//testimonials-->
+	  <!-- /services -->
+
+    <!--//newsletter-->
+</body>
+{% endblock %}
+</html>
