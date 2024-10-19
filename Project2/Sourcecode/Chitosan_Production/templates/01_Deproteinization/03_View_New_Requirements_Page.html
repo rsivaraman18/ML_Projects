@@ -1,0 +1,154 @@
+<!doctype html>
+{% extends '01_Deproteinization/02_home_page.html' %}
+{% block title %} New Requirements  {% endblock %}
+{% block new_order_active %} active {% endblock %}
+{% block content %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Order Details</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'President/Encapsulation/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'President/Encapsulation/style.css' %}">
+    <style>
+     html,body {
+        background: url('{% static "images/img14.jpg" %}') no-repeat 0 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height:100vh;
+    }
+
+    .content {
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .table-container {
+        overflow-x: auto;
+        overflow-y: auto;
+        max-height: 500px;
+    }
+
+    .table-container table {
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 2px solid #000;
+    }
+    th{
+        background:#0067A6;
+        color:white !important;
+        text-align:center;
+    }
+    td{
+        background:white !important;
+        text-align:center;
+        color:black !important;
+    }
+
+    th, td {
+        border: 2px solid #000;
+        padding: 8px;
+        white-space: nowrap;
+        font-weight:bolder;
+    }
+
+    h3 {
+        text-align: center;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+     .client-order-details-heading {
+        text-align: center;
+        font-style: italic;
+        text-decoration: underline;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        animation: bounce 1s ease-in-out infinite;
+        color: red;
+        text-transform: uppercase;
+        background: white;
+        border-radius: 7px;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+         .no-data {
+            text-align: center;
+            font-size: 26px;
+            border-radius:17px;
+            margin-top: 15px;
+            text-transform: uppercase;
+            color: black;
+            padding: 10px;
+            border-radius: 9px;
+            white-space: nowrap;
+            overflow: hidden;
+            font-weight:bolder;
+            font-style:italic;
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="content" style="height:100vh;">
+    <h3 class="client-order-details-heading">NEW REQUIREMENTS</h3>
+    <br>
+    <div class="table-container">
+        <div class="container mt-5">
+            {% if datas %}
+                <div class="offset-md-0">
+                    <table class="table table-bordered" style="margin-top:-1px;">
+                        <thead>
+                        <tr>
+                           <th>S.NO</th>
+                            <th>ORDERID</th>
+                            <th>USERNAME</th>
+                            <th>REQUIREMENTS DETAILS</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for data in datas %}
+                            <tr>
+                                <td>{{forloop.counter}}</td>
+                                <td>ORD10{{ data.id }}</td>
+                                <td>{{data.name}}</td>
+                                <td><a href="/deproteinization/deproteinization_detailed_data/{{data.id}}/" class="btn btn-primary">VIEW</a></td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% else %}
+                <div class="offset-md-4 col-md-5">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td class="no-data">No Requirements </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+</body>
+{% endblock %}
+</html>
