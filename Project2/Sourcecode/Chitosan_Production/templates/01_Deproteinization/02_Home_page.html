@@ -1,0 +1,339 @@
+
+<!doctype html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>{% block title %}Deproteinization Home Page{% endblock %}</title>
+	<!-- Template CSS -->
+
+<link rel="stylesheet" href="{% static '01_Deproteinization/01_home/assets/css/style-starter.css' %}">
+
+	<!-- Template CSS -->
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800&display=swap" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+	<!-- Template CSS -->
+
+</head>
+
+<body>
+<script>
+	{% for msg in messages %}
+	alert('{{msg}}');
+	{% endfor %}
+</script>
+	<!-- Headers-4 block -->
+	<section class="w3l-header-4 mobile-header">
+		<div class="header-tophny">
+			<div class="container-fluid">
+				<header class="top-headerhny">
+					<!--/nav-->
+					<nav class="navbar navbar-expand-lg navbar-light">
+						<a class="navbar-brand" href="/deproteinization/deprotein_home/">
+							De<span class="fa fa-globe" aria-hidden="true"></span>proteinization</a>
+						<!-- if logo is image enable this   
+                    <a class="navbar-brand" href="#index.html">
+                        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                    </a> -->
+						<button class="navbar-toggler" type="button" data-toggle="collapse"
+							data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item ">
+									<a class="nav-link" href="/deproteinization/deprotein_home/">Home</a>
+								</li>
+								<li class="nav-item {% block new_order_active %}{% endblock %}">
+									<a class="nav-link" href="/deproteinization/deproteinization_viewdata/">View</a>
+								</li>
+								<li class="nav-item {% block dataset_upload %}{% endblock %}">
+									<a class="nav-link" href="/deproteinization/deproteimization_dataset_upload/">Upload</a>
+								</li>
+
+								<li class="nav-item {% block start_process %}{% endblock %}">
+									<a class="nav-link" href="/deproteinization/start_process_page/">Process</a>
+								</li>
+								<li class="nav-item {% block view_report_active %}{% endblock %}">
+									<a class="nav-link" href="/deproteinization/deproteinization_report_page/">Report</a>
+								</li>
+
+
+								<li class="nav-item">
+									<a class="nav-link" href="/deproteinization/deprotein_logout/">Logout</a>
+								</li>
+							</ul>
+
+						</div>
+
+
+					</nav>
+					<!--//nav-->
+				</header>
+			</div>
+		</div>
+	</section>
+
+{% block content %}
+	<!-- Headers-4 block -->
+	<!--banner-slider-->
+	<section class="w3l-banner-slider-main">
+    <div class="banner-content">
+        <div id="owl-demo2" class="owl-carousel owl-theme">
+            <!--/slide1-->
+            <div class="item">
+                <div class="top-bannerhny-content">
+                    <div class="top-bannerhny-left">
+                        <div class="banner-innf">
+                            <h6 class="hny-sub">Deproteinization</h6>
+                            <h3>Optimize Your <span>Chitosan Synthesis</span></h3>
+                            <p>Efficient deproteinization processes to enhance chitosan purity and quality.</p>
+                            <div class="button-6">
+                                <div class="eff-6"></div>
+                                <a href="/deproteinization/deprotein_home/">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-bannerhny-right">
+                        <!-- Optionally, you can add an image or illustration related to deproteinization -->
+                    </div>
+                </div>
+            </div>
+            <!--//slide1-->
+            <!--/slide2-->
+            <div class="item">
+                <div class="top-bannerhny-content">
+                    <div class="top-bannerhny-left">
+                        <div class="banner-innf">
+                            <h6 class="hny-sub">Purification</h6>
+                            <h3>Achieve High <span>Purity Chitosan</span></h3>
+                            <p>Advanced purification methods to ensure the highest standards in chitosan production.</p>
+                            <div class="button-6">
+                                <div class="eff-6"></div>
+                                <a href="/deproteinization/deprotein_home/">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-bannerhny-right one">
+                        <!-- Optionally, you can add an image or illustration related to purification -->
+                    </div>
+                </div>
+            </div>
+            <!--//slide2-->
+            <!--/slide3-->
+            <div class="item">
+                <div class="top-bannerhny-content">
+                    <div class="top-bannerhny-left">
+                        <div class="banner-innf">
+                            <h6 class="hny-sub">Extraction</h6>
+                            <h3>Efficient <span>Chitin Extraction</span></h3>
+                            <p>Innovative extraction techniques to maximize chitin yield for superior chitosan.</p>
+                            <div class="button-6">
+                                <div class="eff-6"></div>
+                                <a href="/deproteinization/deprotein_home/">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-bannerhny-right two">
+                        <!-- Optionally, you can add an image or illustration related to extraction -->
+                    </div>
+                </div>
+            </div>
+            <!--//slide3-->
+            <!--/slide4-->
+            <div class="item">
+                <div class="top-bannerhny-content">
+                    <div class="top-bannerhny-left">
+                        <div class="banner-innf">
+                            <h6 class="hny-sub">Innovative Techniques</h6>
+                            <h3>Explore Cutting-Edge <span>Chitosan Technology</span></h3>
+                            <p>Discover the latest advancements in chitosan synthesis and its applications.</p>
+                            <div class="button-6">
+                                <div class="eff-6"></div>
+                                <a href="/deproteinization/deprotein_home/">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-bannerhny-right three">
+                        <!-- Optionally, you can add an image or illustration related to innovative techniques -->
+                    </div>
+                </div>
+            </div>
+            <!--//slide4-->
+        </div>
+    </div>
+</section>
+
+	<!-- //banner-slider-->
+	<section class="w3l-bottom-grids-6">
+    <div class="bottom-grids-info py-5">
+        <div class="container py-lg-5">
+            <div class="row bottomnhy-grids">
+                <div class="col-lg-3 col-md-6 about-gd mt-lg-0 mt-3">
+                    <div class="about-gd-inn">
+
+                        <h5><a href="/deproteinization/deprotein_home/">Deproteinization Process</a></h5>
+                        <p>The deproteinization process effectively removes proteins from chitin, ensuring the production of high-purity chitosan suitable for various applications.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 about-gd mt-lg-0 mt-3">
+                    <div class="about-gd-inn">
+
+                        <h5><a href="/deproteinization/deprotein_home/">Chemical Treatments</a></h5>
+                        <p>Our chemical treatment methods are optimized to break down proteins while preserving the integrity of the chitin, a crucial step in chitosan synthesis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 about-gd mt-lg-0 mt-3">
+                    <div class="about-gd-inn">
+
+                        <h5><a href="/deproteinization/deprotein_home/">Protein Analysis</a></h5>
+                        <p>Comprehensive protein analysis ensures that our deproteinization process is thorough, leaving behind minimal residual protein in the final chitosan product.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 about-gd mt-lg-0 mt-3">
+                    <div class="about-gd-inn">
+
+                        <h5><a href="/deproteinization/deprotein_home/">Quality Control</a></h5>
+                        <p>Stringent quality control measures are in place to monitor every step of the deproteinization process, ensuring consistent and reliable results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+			<!-- copyright -->
+			<!-- move top -->
+			<button onclick="topFunction()" id="movetop" title="Go to top">
+				<span class="fa fa-arrow-up" aria-hidden="true"></span>
+			</button>
+			<script>
+				// When the user scrolls down 20px from the top of the document, show the button
+				window.onscroll = function () {
+					scrollFunction()
+				};
+
+				function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						document.getElementById("movetop").style.display = "block";
+					} else {
+						document.getElementById("movetop").style.display = "none";
+					}
+				}
+
+				// When the user clicks on the button, scroll to the top of the document
+				function topFunction() {
+					document.body.scrollTop = 0;
+					document.documentElement.scrollTop = 0;
+				}
+			</script>
+			<!-- /move top -->
+
+		</section>
+	</footer>
+	<!--//footer-66 -->
+</body>
+
+</html>
+{% endblock %}
+<script src="{% static '01_Deproteinization/01_home/assets/js/jquery-3.3.1.min.js' %}"></script>
+<!-- disable body scroll which navbar is in active -->
+
+<!--//-->
+<script>
+	$(function () {
+		$('.navbar-toggler').click(function () {
+			$('body').toggleClass('noscroll');
+		})
+	});
+</script>
+<!--/scroll-down-JS-->
+<!--pop-up-box-->
+
+<script src="{% static '01_Deproteinization/01_home/assets/js/jquery.magnific-popup.min.js' %}"></script>
+<script>
+	$(document).ready(function () {
+		$('.popup-with-zoom-anim').magnificPopup({
+			type: 'inline',
+
+			fixedContentPos: false,
+			fixedBgPos: true,
+
+			overflowY: 'auto',
+
+			closeBtnInside: true,
+			preloader: false,
+
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-zoom-in'
+		});
+
+		$('.popup-with-move-anim').magnificPopup({
+			type: 'inline',
+
+			fixedContentPos: false,
+			fixedBgPos: true,
+
+			overflowY: 'auto',
+
+			closeBtnInside: true,
+			preloader: false,
+
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-slide-bottom'
+		});
+	});
+</script>
+
+<!--//pop-up-box-->
+<!-- for blog carousel slider -->
+<script src="{% static '01_Deproteinization/01_home/assets/js/owl.carousel1.js' %}"></script>
+<script>
+	$(document).ready(function () {
+		$("#owl-demo2").owlCarousel({
+			items: 1,
+			lazyLoad: true,
+			autoPlay: true,
+			navigation: false,
+			navigationText: ["", ""],
+			rewindNav: false,
+			scrollPerPage: true,
+			pagination: false,
+			paginationNumbers: false,
+
+		})
+	});
+	$(document).ready(function () {
+		$("#owl-demo1").owlCarousel({
+			loop: true,
+			margin: 20,
+			responsiveClass: true,
+			responsive: {
+				0: {
+					items: 1,
+					nav: true
+				},
+				600: {
+					items: 2,
+					nav: false
+				},
+				1000: {
+					items: 3,
+					nav: true,
+					loop: false
+				}
+			}
+		})
+	})
+</script>
+
+<script src="{% static '01_Deproteinization/01_home/assets/js/bootstrap.min.js' %}"></script>
