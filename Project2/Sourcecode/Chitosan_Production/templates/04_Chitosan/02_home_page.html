@@ -1,0 +1,268 @@
+
+<!doctype html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>{% block title %}Chitosan Synthesis Team {% endblock %}</title>
+
+
+<link rel="stylesheet" href="{% static '04_Chitosan/Home/assets/css/style-starter.css' %}">
+
+
+	<link href="//fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700&display=swap" rel="stylesheet">
+	<!-- Template CSS -->
+</head>
+
+<body>
+<script>
+	{% for msg in messages %}
+	alert('{{msg}}');
+	{% endfor %}
+</script>
+	<!--w3l-header-->
+	<header class="w3l-header-nav" style="background:#227daf;">
+		<!--/nav-->
+		<nav class="navbar navbar-expand-lg navbar-light px-lg-0 py-0 px-3 stroke" >
+			<div class="container">
+				<h1><a class="navbar-brand" href="/chitosan_synthesis/chitosan_home/" style="padding:7px;border-radius:11px;">Chitosan<span>Synthesis</span></a></h1>
+				<!-- if logo is image enable this   
+						<a class="navbar-brand" href="#index.html">
+							<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+						</a> -->
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="fa icon-expand fa-bars"></span>
+					<span class="fa icon-close fa-times"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item ">
+							<a class="nav-link" href="/chitosan_synthesis/chitosan_home/">Home</a>
+						</li>
+						<li class="nav-item {% block report_view_page %}{% endblock %}">
+							<a class="nav-link" href="/chitosan_synthesis/deacetyl_chitosan_report_view/">View</a>
+						</li>
+
+						<li class="nav-item  {% block method_page %}{% endblock %}">
+							<a class="nav-link" href="/chitosan_synthesis/chitosan_method_page/">Method</a>
+						</li>
+
+						<li class="nav-item  {% block process_page %}{% endblock %}">
+							<a class="nav-link" href="/chitosan_synthesis/chitosan_start_process_page/">Process</a>
+						</li>
+
+						<li class="nav-item  {% block final_report_page %}{% endblock %}">
+							<a class="nav-link" href="/chitosan_synthesis/chitosan_report_page/">Encryption</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/chitosan_synthesis/chitosan_logout/">Logout</a>
+						</li>
+					</ul>
+					<!--/search-right-->
+
+
+				</div>
+			</div>
+		</nav>
+		<!--//nav-->
+	</header>
+
+
+	{% block content %}
+	<section class="w3l-main-slider" id="home">
+    <div class="banner-content">
+        <div id="demo-1"
+            data-zs-src='["assets/images/chitosan_1.jpg", "assets/images/chitosan_2.jpg", "assets/images/chitosan_3.jpg", "assets/images/chitosan_4.jpg"]'
+            data-zs-overlay="dots">
+            <div class="demo-inner-content">
+                <div class="container">
+                    <div class="banner-infhny">
+                        <span>Innovating Chitosan Solutions.</span>
+                        <h3>Transforming Chitosan Production with Expertise</h3>
+                        <p class="pr-lg-5">Discover our state-of-the-art methods for chitosan synthesis, including efficient extraction, advanced deproteinization, and precise purification. Our approach ensures high-quality results and sustainable practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+	<!-- /main-slider -->
+	<!-- //banner-slider-->
+	<!-- /specification-6-->
+		<!-- //grids -->
+	</section>
+	<!--//testimonials-->
+	<!-- /w3l-content-with-photo-4-->
+	<section class="w3l-content-with-photo-4">
+    <!-- /content-grids-->
+    <div class="content-photo-info py-5">
+        <div class="container py-lg-3">
+            <!-- /row-->
+            <div class="content-photo-grids row">
+
+                <div class="photo-6-inf-right col-lg-7 text-left pr-lg-5 mb-lg-0 mb-4">
+                    <h6 class="sub-title">Advanced Chitosan Synthesis</h6>
+                    <h3 class="hny-title">Streamlining Chitosan Production
+                    </h3>
+                    <p class="mt-3">Our cutting-edge chitosan synthesis techniques ensure high purity and efficiency. We focus on optimizing every step from chitin extraction to final product purification.</p>
+                    <div class="servehny-1">
+                        <div class="ser-sub">
+                            <a href="#link" class="ser1"><span class="fa fa-check"></span> Efficient Chitin Extraction</a>
+                            <a href="#link" class="ser1"><span class="fa fa-check"></span> Innovative Deproteinization</a>
+                            <a href="#link" class="ser1"><span class="fa fa-check"></span> Advanced Purification Methods</a>
+                        </div>
+                        <div class="ser-sub">
+                            <a href="#link" class="ser1"><span class="fa fa-check"></span> High-Quality Chitosan</a>
+                            <a href="#link" class="ser1"><span class="fa fa-check"></span> Sustainable Practices</a>
+                            <a href="#link" class="ser1"><span class="fa fa-check"></span> Expert Team</a>
+                        </div>
+                    </div>
+
+
+            </div>
+            <!-- //row-->
+        </div>
+    </div>
+</section>
+
+	<!-- footer-66 -->
+
+			<!-- copyright -->
+			<!-- move top -->
+			<button onclick="topFunction()" id="movetop" title="Go to top">
+				<span class="fa fa-arrow-up" aria-hidden="true"></span>
+			</button>
+			<script>
+				// When the user scrolls down 20px from the top of the document, show the button
+				window.onscroll = function () {
+					scrollFunction()
+				};
+
+				function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						document.getElementById("movetop").style.display = "block";
+					} else {
+						document.getElementById("movetop").style.display = "none";
+					}
+				}
+
+				// When the user clicks on the button, scroll to the top of the document
+				function topFunction() {
+					document.body.scrollTop = 0;
+					document.documentElement.scrollTop = 0;
+				}
+			</script>
+			<!-- /move top -->
+
+		</section>
+	</footer>
+	<!--//footer-66 -->
+</body>
+{% endblock %}
+</html>
+
+
+<script src="{% static '04_Chitosan/Home/assets/js/jquery-3.3.1.min.js' %}"></script>
+
+<!-- disable body scroll which navbar is in active -->
+
+<!--//-->
+<script>
+	$(function () {
+		$('.navbar-toggler').click(function () {
+			$('body').toggleClass('noscroll');
+		})
+	});
+</script>
+<!--/scroll-down-JS-->
+{% load static %}
+<script src="{% static '04_Chitosan/Home/assets/js/jquery.min.js' %}"></script>
+<script src="{% static '04_Chitosan/Home/assets/js/modernizr-2.6.2.min.js' %}"></script>
+<script src="{% static '04_Chitosan/Home/assets/js/jquery.zoomslider.min.js' %}"></script>
+<script src="{% static '04_Chitosan/Home/assets/js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static '04_Chitosan/Home/assets/js/jquery.countup.js' %}"></script>
+
+<script>
+	$('.counter').countUp();
+</script>
+<!-- //stats -->
+<!--pop-up-box-->
+
+<script src="04_Chitosan/Home/assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$('.popup-with-zoom-anim').magnificPopup({
+			type: 'inline',
+
+			fixedContentPos: false,
+			fixedBgPos: true,
+
+			overflowY: 'auto',
+
+			closeBtnInside: true,
+			preloader: false,
+
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-zoom-in'
+		});
+
+		$('.popup-with-move-anim').magnificPopup({
+			type: 'inline',
+
+			fixedContentPos: false,
+			fixedBgPos: true,
+
+			overflowY: 'auto',
+
+			closeBtnInside: true,
+			preloader: false,
+
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-slide-bottom'
+		});
+	});
+</script>
+
+<!--//pop-up-box-->
+<!-- for blog carousel slider -->
+<script src="{% static '04_Chitosan/Home/assets/js/owl.carousel1.js' %}"></script>
+<script>
+	$(document).ready(function () {
+		$("#owl-demo1").owlCarousel({
+			loop: true,
+			margin:20,
+			responsiveClass: true,
+			responsive: {
+				0: {
+					items:1,
+					nav: true
+				},
+				600: {
+					items: 2,
+					nav: false
+				},
+				1000: {
+					items: 3,
+					nav: true,
+					loop: false
+				}
+			}
+		})
+	})
+</script>
+<!-- //script -->
+
+
+<script src="{% static '04_Chitosan/Home/assets/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static '04_Chitosan/Home/assets/js/owl.carousel1.js' %}"></script>
+<script src="{% static '04_Chitosan/Home/assets/js/bootstrap.min.js' %}"></script>
