@@ -1,0 +1,147 @@
+<!doctype html>
+{% extends '05_Manager/02_Home.html' %}
+{% block title %} Mineral Separation Team Login Access {% endblock %}
+{% block login_active_approve %} active {% endblock %}
+{% block content %}
+
+
+<html lang="en">
+{% load static %}
+  	<head>
+
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="{% static 'president/table1_new/style.css' %}">
+
+		<style>
+			html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            background-image: url("{% static 'Images/img2.jpg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:top;
+
+        }
+			#tb{
+				background:white;color:black;font-weight:bolder;text-align:center;
+			}
+			#th{
+				background:gray;text-align:center;
+			}
+
+			 @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+       		 }
+
+
+			.heading-section {
+				overflow: hidden;
+				white-space: nowrap;
+				font-weight: bolder;
+				color: black;
+				animation: typing 3s steps(28, end);
+				background:white;
+				padding:3px;
+				border-radius:7px;
+				text-transform:uppercase;
+			}
+
+			.table > tbody > tr > th,
+			.table > tbody > tr > td {
+				font-size: 0.9em;
+				color: black !important;
+				border-top: none !important;
+			}
+
+			.table > thead > tr > th {
+				color: white !important;
+				background-color: #074677; /* or any other color for the background */
+			}
+
+		</style>
+
+	</head>
+
+	<body >
+	<section class="ftco-section" >
+		<br><br><br><br>
+		<div class="container" >
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section" id="typing-effect">MINERAL SEPARATION Team </h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table table-bordered table-dark ">
+						  	<thead id="th">
+						    	<tr>
+									<th>S.NO</th>
+									<th>ID</th>
+									<th>USERNAME</th>
+									<th>EMAIL</th>
+									<th>ACCESS STATUS</th>
+									<th>APPROVE</th>
+									<th>REJECT</th>
+								</tr>
+						    </thead>
+
+							<tbody id="tb">
+								{% if datas %}
+									{% for client in datas %}
+									<tr>
+										<td>{{forloop.counter}}</td>
+										<td>TEAMID{{ client.id }}</td>
+										<td>{{client.username}}</td>
+										<td>{{client.email}}</td>
+
+										{% if client.mineral_team_id is None %}
+											<td>No Access </td>
+										{% else %}
+											<td>{{client.mineral_team_id}}</td>
+										{% endif %}
+
+
+										{% if client.mineral_login_approve is False %}
+											<td><a href="/manager/manager_mineral_access_approve/{{client.id}}/" class="btn btn-primary">Access</a></td>
+										{% elif client.mineral_login_approve is True %}
+											<td><a class="btn btn-success">Approved</a></td>
+										{% endif %}
+
+										{% if client.mineral_login_approve is False %}
+											<td><a href="/manager/manager_mineral_access_deny/{{client.id}}/" class="btn btn-warning">Deny</a></td>
+										{% elif client.mineral_login_approve is True %}
+											<td><a class="btn btn-danger">------</a></td>
+										{% endif %}
+									</tr>
+									{% endfor %}
+								{% else %}
+									<tr>
+										<td colspan="10" style="text-align:center;color:red;font-weight:bolder;">NO MINERAL TEAM REGISTERED</td>
+									</tr>
+    							{% endif %}
+
+        					</tbody>
+
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+
+	</body>
+{% endblock %}
+
+</html>
+
