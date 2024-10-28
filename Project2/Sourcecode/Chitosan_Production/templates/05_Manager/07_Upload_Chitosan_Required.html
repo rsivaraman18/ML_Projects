@@ -1,0 +1,218 @@
+<!doctype html>
+{% extends '05_Manager/02_home.html' %}
+{% block title %} Upload Chitosan Details {% endblock %}
+{% block upload_active %} active {% endblock %}
+{% block content %}
+
+
+<html lang="en">
+{% load static %}
+  	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="{% static 'president/table1_new/style.css' %}">
+
+		<style>
+			html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            background-image: url("{% static 'images/img1.jpg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+			#tb{
+				background:#D4D6FD;color:black;font-weight:bolder;text-align:center;
+			}
+			#th{
+				background:#766CFF;text-align:center;
+			}
+
+			 @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+       		 }
+
+
+			.heading-section {
+				overflow: hidden;
+				white-space: nowrap;
+				font-weight: bolder;
+				color: black;
+				animation: typing 3s steps(28, end);
+				background:white;
+				padding:3px;
+				border-radius:7px;
+				text-transform:uppercase;
+				padding:5px 0px 5px 5px;
+			}
+
+
+			#message {
+				display: none;
+				padding: 10px;
+				background-color: #f0f0f0;
+				border: 1px solid #ccc;
+				margin-bottom: 20px;
+				transition: width 1s ease-out, opacity 1s ease-out;
+				white-space: nowrap; /* Prevent text from wrapping */
+				overflow: hidden; /* Ensure contents are hidden during animation */
+			}
+
+			#message.close-animation {
+				width: 0;
+				opacity: 0;
+			}
+
+
+						.table > tbody > tr > th,
+			.table > tbody > tr > td {
+				font-size: 0.9em;
+				color: black !important;
+				border-top: none !important;
+			}
+
+			.table > thead > tr > th {
+				color: white !important;
+				background-color: #074677; /* or any other color for the background */
+			}
+
+		</style>
+
+	</head>
+
+	<body >
+	<section class="ftco-section" >
+		<br><br><br><br>
+		<div class="container" >
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h3 class="heading-section" id="typing-effect">Upload Chitosan Requirements</h3>
+				</div>
+			</div>
+			<div id="message" style="display:none; padding: 10px; background-color: #f0f0f0; border: 1px solid #ccc; margin-bottom: 20px;"></div>
+
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<div class="row">
+						<div class="col d-flex justify-content-end">
+							<td><a href="/manager/manager_upload_new_requirement/" class="btn btn-warning btn-lg" style="margin-bottom:10px;">New Upload</a></td>
+						</div>
+					</div>
+
+
+					<div class="table-wrap">
+						<table class="table table-bordered table-dark ">
+						  	<thead id="th">
+						    	<tr>
+									<th>S.NO</th>
+									<th>ID</th>
+									<th>USERNAME</th>
+									<th>DEPROTEINIZATION TEAM REPORT</th>
+									<th>MINERAL  TEAM REPORT</th>
+									<th>DEACETYLATION REPORT</th>
+									<th>CHITOSAN  REPORT</th>
+
+								</tr>
+						    </thead>
+
+							<tbody id="tb">
+								{% if datas %}
+									{% for data in datas %}
+									<tr>
+										<td>{{forloop.counter}}</td>
+										<td>ORD10{{ data.id }}</td>
+										<td>{{data.name}}</td>
+
+
+										{% if data.deprotein_report is False and data.deproteint_report_mng is False %}
+											<td><a id="reportPending" class="btn btn-info" onclick="showMessage('Report Pending')">Report Pending</a></td>
+										{% elif data.deprotein_report is True and data.deproteint_report_mng is False %}
+											<td><a id="managerApproval" class="btn btn-warning" onclick="showMessage('Manager Need to Approve')">Manager Need to Approve</a></td>
+										{% else %}
+											<td><a href="#" id="reportGenerated"  class="btn btn-success" onclick="showMessage('Report Generated')">Report Generated</a></td></td>
+										{% endif %}
+
+
+
+										{% if data.mineral_report is False and data.mineral_report_mng is False %}
+											<td><a id="reportPending" class="btn btn-info" onclick="showMessage('Report Pending')">Report Pending</a></td>
+										{% elif data.mineral_report is True and data.mineral_report_mng is False %}
+											<td><a id="managerApproval" class="btn btn-warning" onclick="showMessage('Manager Need to Approve')">Manager Need to Approve</a></td>
+										{% else %}
+											<td><a id="reportGenerated" class="btn btn-success" onclick="showMessage('Report Generated')">Report Generated</a></td>
+										{% endif %}
+
+
+
+										{% if data.deacetyl_report is False and data.deacetyl_report_mng is False %}
+											<td><a id="reportPending" class="btn btn-info" onclick="showMessage('Report Pending')">Report Pending</a></td>
+										{% elif data.deacetyl_report is True and data.deacetyl_report_mng is False %}
+											<td><a id="managerApproval" class="btn btn-warning" onclick="showMessage('Manager Need to Approve')">Manager Need to Approve</a></td>
+										{% else %}
+											<td><a href="#" id="reportGenerated"  class="btn btn-success" onclick="showMessage('Report Generated')">Report Generated</a></td></td>
+										{% endif %}
+
+
+
+										{% if data.chitosan_report is False and data.chitosan_report_mng is False %}
+											<td><a id="reportPending" class="btn btn-info" onclick="showMessage('Report Pending')">Report Pending</a></td>
+										{% elif data.chitosan_report is True and data.chitosan_report_mng is False %}
+											<td><a id="managerApproval" class="btn btn-warning" onclick="showMessage('Manager Need to Approve')">Manager Need to Approve</a></td>
+										{% else %}
+											<td><a href="#" id="reportGenerated"  class="btn btn-success" onclick="showMessage('Report Generated')">Report Generated</a></td></td>
+										{% endif %}
+
+
+									</tr>
+									{% endfor %}
+								{% else %}
+									<tr>
+										<td colspan="10" style="text-align:center;color:red;font-weight:bolder;">NO REQUIREMENTS </td>
+									</tr>
+    							{% endif %}
+
+        					</tbody>
+
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+
+	</body>
+<script>
+function showMessage(message) {
+    var messageDiv = document.getElementById('message');
+    messageDiv.innerHTML = message;
+    messageDiv.style.display = 'block';
+    messageDiv.classList.remove('close-animation');
+    messageDiv.style.width = 'auto'; // Reset width for animation
+
+    // Add the close-animation class after 4 seconds (4000 milliseconds)
+    setTimeout(function() {
+        messageDiv.classList.add('close-animation');
+    }, 1000);
+
+    // Hide the message after 5 seconds (2000 milliseconds)
+    setTimeout(function() {
+        messageDiv.style.display = 'none';
+        messageDiv.classList.remove('close-animation'); // Reset for next time
+        messageDiv.style.width = 'auto'; // Reset width for next message
+    }, 5000);
+}
+</script>
+{% endblock %}
+
+</html>
+
