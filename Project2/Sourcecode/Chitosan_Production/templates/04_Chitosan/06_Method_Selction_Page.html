@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+{% extends '04_Chitosan/02_home_page.html' %}
+{% block title %} Method Selection Page {% endblock %}
+{% block method_page %} active{% endblock %}
+{% load static %}
+{% block content %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'Filtration/Feasibility/style.css' %}">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+        background-image: url("{% static 'Images/img1.jpg' %}");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #ffffff; /* Change text color to white */
+        padding: 0 10px;
+    }
+
+    .wrapper {
+        max-width: 500px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+        margin: 50px auto;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.125);
+        padding: 30px;
+        max-height: 100vh;
+        border-radius: 8px;
+    }
+
+    .wrapper .title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        color: black;
+        text-transform: uppercase;
+        text-align: center;
+        animation: fadeIn 2s ease-in-out; /* Add animation */
+    }
+
+    .wrapper .form {
+        width: 100%;
+    }
+
+    .wrapper .form .inputfield {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .wrapper .form .inputfield label {
+        width: 200px;
+        color: #227daf;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .wrapper .form .inputfield .input,
+    .wrapper .form .inputfield .textarea {
+        width: 100%;
+        outline: none;
+        border: 1px solid #d5dbd9;
+        font-size: 15px;
+        padding: 8px 10px;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+
+    .wrapper .form .inputfield .textarea {
+        width: 100%;
+        height: 125px;
+        resize: none;
+    }
+
+    .wrapper .form .inputfield .custom_select {
+        position: relative;
+        width: 100%;
+        height: 37px;
+    }
+
+    .wrapper .form .inputfield .custom_select:before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        border: 8px solid;
+        border-color: #d5dbd9 transparent transparent transparent;
+        pointer-events: none;
+    }
+
+    .wrapper .form .inputfield .custom_select select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        width: 100%;
+        height: 100%;
+        border: 0px;
+        padding: 8px 10px;
+        font-size: 15px;
+        border: 1px solid #d5dbd9;
+        border-radius: 3px;
+    }
+
+    .wrapper .form .inputfield .input:focus,
+    .wrapper .form .inputfield .textarea:focus,
+    .wrapper .form .inputfield .custom_select select:focus {
+        border: 1px solid #fec107;
+    }
+
+    .wrapper .form .inputfield p {
+        font-size: 14px;
+        color: #757575;
+    }
+
+    .wrapper .form .inputfield .check {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        display: block;
+        cursor: pointer;
+    }
+
+    .wrapper .form .inputfield .check input[type="checkbox"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+
+    .wrapper .form .inputfield .check .checkmark {
+        width: 15px;
+        height: 15px;
+        border: 1px solid #fec107;
+        display: block;
+        position: relative;
+    }
+
+    .wrapper .form .inputfield .check .checkmark:before {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 2px;
+        width: 5px;
+        height: 2px;
+        border: 2px solid;
+        border-color: transparent transparent #fff #fff;
+        transform: rotate(-45deg);
+        display: none;
+    }
+
+    .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark {
+        background: #fec107;
+    }
+
+    .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before {
+        display: block;
+    }
+
+    .wrapper .form .inputfield .btn {
+        width: 100%;
+        padding: 8px 10px;
+        font-size: 15px;
+        border: 0px;
+        background: #227daf;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 3px;
+        outline: none;
+        animation: fadeInUp 2s ease-in-out; /* Add animation */
+    }
+
+    .wrapper .form .inputfield .btn:hover {
+        background: #ffd658;
+    }
+
+    .wrapper .form .inputfield:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 420px) {
+        .wrapper .form .inputfield {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .wrapper .form .inputfield label {
+            margin-bottom: 5px;
+        }
+
+        .wrapper .form .inputfield.terms {
+            flex-direction: row;
+        }
+    }
+
+    label, input, select {
+        font-weight: bolder;
+        text-align: left;
+        color: #333333;
+    }
+
+    /* Keyframe animations */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+<body>
+
+<br>
+<a href="/chitosan_synthesis/chitosan_method_page/" class="btn btn-warning">Back</a>
+<br>
+
+<div class="wrapper" style="margin-top:10px;border-radius:8px;">
+    <div class="title">Chitosan Method Adoption</div>
+
+    <div class="form">
+        <form action="/chitosan_synthesis/chitosan_method_selection_page/{{details.id}}/" method="POST" autocomplete="off">
+            {% csrf_token %}
+
+           <div class="inputfield">
+                <label>Chitin Extraction Method</label>
+                <div class="custom_select">
+                    <select name="chitin_extraction_method" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="Acid-Base">Acid-Base</option>
+                        <option value="Enzymatic">Enzymatic</option>
+                        <option value="Microwave-Assisted">Microwave-Assisted</option>
+                        <option value="Ultrasonication">Ultrasonication</option>
+                    </select>
+                </div>
+           </div>
+
+            <div class="inputfield">
+                <label>Chitosan Synthesis Reagent</label>
+                <div class="custom_select">
+                    <select name="chitosan_synthesis_reagent" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="Ethanol">Ethanol</option>
+                        <option value="Methanol">Methanol</option>
+                        <option value="Propanol">Propanol</option>
+                        <option value="Butanol">Butanol</option>
+                        <option value="Isopropanol">Isopropanol</option>
+                        <option value="Ethylene Glycol">Ethylene Glycol</option>
+                        <option value="Propylene Glycol">Propylene Glycol</option>
+                        <option value="Glycerol">Glycerol</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="inputfield">
+                <label>Viscosity (cP)</label>
+                <div class="custom_select">
+                    <select name="viscosity" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">50</option>
+                        <option value="60">60</option>
+                        <option value="70">70</option>
+                        <option value="80">80</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="inputfield">
+                <label>Reagent Concentration (%)</label>
+                <div class="custom_select">
+                    <select name="reagent_concentration" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="inputfield">
+                <input type="submit" value="Method Submit" class="btn">
+            </div>
+        </form>
+    </div>
+</div>
+<br><br><br><br><br>
+
+</body>
+{% endblock %}
+</html>
