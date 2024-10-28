@@ -1,0 +1,193 @@
+<!doctype html>
+{% extends '04_Chitosan/02_home_page.html' %}
+{% block title %} Chitosan Method {% endblock %}
+{% block method_page %} active {% endblock %}
+{% block content %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'President/Encapsulation/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'President/Encapsulation/style.css' %}">
+    <style>
+     html,body {
+        background: url('{% static "Images/img30.jpg" %}') no-repeat 0 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .content {
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .table-container {
+        overflow-x: auto;
+        overflow-y: auto;
+        max-height: 500px;
+    }
+
+    .table-container table {
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 2px solid #000;
+    }
+    th{
+        background:#0067A6;
+        color:white !important;
+        text-align:center;
+    }
+    td{
+        background:white !important;
+        text-align:center;
+        color:black !important;
+    }
+
+    th, td {
+        border: 2px solid #000;
+        padding: 8px;
+        white-space: nowrap;
+        font-weight:bolder;
+    }
+
+    h3 {
+        text-align: center;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    .client-order-details-heading {
+        text-align: center;
+        font-style: italic;
+        text-decoration: underline;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        animation: shake 0.5s ease-in-out infinite;
+        color:red;
+        text-transform:uppercase;
+        background:white;
+        border-radius:7px;
+        width:30%;
+        margin:0 auto;
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(-5px);
+        }
+        50% {
+            transform: translateX(5px);
+        }
+        75% {
+            transform: translateX(-5px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+         .no-data {
+            text-align: center;
+            font-size: 26px;
+            border-radius:17px;
+            margin-top: 15px;
+            text-transform: uppercase;
+            color: black;
+            padding: 10px;
+            border-radius: 9px;
+            white-space: nowrap;
+            overflow: hidden;
+            font-weight:bolder;
+            font-style:italic;
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <br><br>
+    <h3 class="client-order-details-heading">Chitosan Method </h3>
+    <br>
+    <div class="table-container">
+        <div class="container mt-5">
+            {% if datas %}
+                <div class="offset-md-0">
+                    <table class="table table-bordered" style="margin-top:-1px;">
+                        <thead>
+                        <tr>
+                           <th>S.NO</th>
+                            <th>ID</th>
+                            <th>PATIENT NAME</th>
+                            <th>Method Selection</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for data in datas %}
+                            <tr>
+                                <td>{{forloop.counter}}</td>
+                                <td>ORD10{{data.id }}</td>
+                                <td>{{data.name}}</td>
+
+                                {% if data.chitosan_method is False %}
+                                     <td><a href="/chitosan_synthesis/chitosan_method_selection_page/{{data.id}}/" class="btn btn-info">Select Method</a></td>
+                                {% else %}
+                                    <td><a href="#" class="btn btn-danger">Method Adopted</a></td>
+                                {% endif %}
+
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% else %}
+                <div class="offset-md-4 col-md-5">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td class="no-data">No order Placed</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br>
+</body>
+{% endblock %}
+
+
+<script>
+function showMessage(message) {
+    var messageDiv = document.getElementById('message');
+    messageDiv.innerHTML = message;
+    messageDiv.style.display = 'block';
+    messageDiv.classList.remove('close-animation');
+    messageDiv.style.width = 'auto'; // Reset width for animation
+
+    // Add the close-animation class after 4 seconds (4000 milliseconds)
+    setTimeout(function() {
+        messageDiv.classList.add('close-animation');
+    }, 1000);
+
+    // Hide the message after 5 seconds (2000 milliseconds)
+    setTimeout(function() {
+        messageDiv.style.display = 'none';
+        messageDiv.classList.remove('close-animation'); // Reset for next time
+        messageDiv.style.width = 'auto'; // Reset width for next message
+    }, 5000);
+}
+</script>
+
+</html>
