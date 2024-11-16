@@ -3,7 +3,7 @@ import subprocess
 import time
 import re 
 from datetime import datetime, timedelta
-  
+   
 # Define the Git commands
 commands = {
     'status': 'git status --porcelain',
